@@ -8,7 +8,7 @@ An approval-driven production playbook for planning original short-form stories,
 
 **Core rule:** still-image production begins with one provider choice—ChatGPT Images or Google Flow Images. That choice authorizes the planned image set in the approved production package. Generate and inspect the set, retry clear defects without per-image approvals, then show all results together for selection. Videos render in Google Flow, and each video clip requires explicit approval of its prompt, settings, and displayed credit cost before generation.
 
-**Start the workflow by saying `FlowStart`.** Before making trend, format, hook, or platform recommendations, the assistant researches dated evidence across TikTok, YouTube Shorts, and Instagram Reels (plus any other platforms in the brief) and gives a compact cited research basis. The workflow stays interactive, advances after every choice, aims for five required decisions before the first image batch, and never exceeds seven unless the user asks to explore further. Related creative choices are bundled.
+**Start the workflow in any chat by saying `FlowStart`.** The installed `google-flow-start` Codex skill makes this trigger discoverable in a fresh chat. It loads this workspace's canonical prompt and workflow, resumes saved project state when available, and otherwise starts at Gate 1. The trigger means begin immediately, not merely acknowledge it. Before making trend, format, hook, or platform recommendations, the assistant researches dated evidence across TikTok, YouTube Shorts, and Instagram Reels (plus any other platforms in the brief) and gives a compact cited research basis. The workflow stays interactive, advances after every choice, aims for five required decisions before the first image batch, and never exceeds seven unless the user asks to explore further. Related creative choices are bundled.
 
 **Easy choices:** Every decision and approval gate presents lettered or numbered options, with one **Recommended** choice and a brief reason. Show the full practical menu (often six or seven choices) instead of arbitrarily narrowing open-ended decisions. Include **Choose for me** and **Describe my own** where relevant; use short **Approve / Revise / Stop** menus for approval gates. In chat, reply with just the letter or number.
 
@@ -21,6 +21,7 @@ An approval-driven production playbook for planning original short-form stories,
 - [Workflow Diagram](assets/google-flow-viral-workflow.svg) — visual overview.
 - [Google Flow Operations Field Guide](GOOGLE%20FLOW%20OPERATIONS%20FIELD%20GUIDE.md) — current official-documentation-derived guidance for models, modes, settings, credits, privacy, edits, and asset management.
 - [Google Flow Character and Voice Guide](GOOGLE%20FLOW%20CHARACTER%20AND%20VOICE%20GUIDE.md) — character creation, voice customization, attachment, and supported voice-reference workflow.
+- [google-flow-start skill](skills/google-flow-start/SKILL.md) — reusable startup and resume instructions that make `FlowStart` work in fresh chats.
 
 ## FlowStart research and decision limits
 
