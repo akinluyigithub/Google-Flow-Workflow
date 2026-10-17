@@ -1,6 +1,6 @@
 # VideoExpress generation log — 365 Seconds to Midnight
 
-Updated 2026-10-17 (America/Chicago). Generation is paused at the user's request after CLIP 15 submission. No CLIP 16–24 jobs have been submitted.
+Updated 2026-10-17 (America/Chicago). CLIP 16–24 have rendered in VideoExpress, been matched to their receipt IDs, and renamed in My AI Videos. Generation is paused after CLIP 24 as requested.
 
 | Clip | VideoExpress name / status | Receipt ID |
 | --- | --- | --- |
@@ -20,7 +20,18 @@ Updated 2026-10-17 (America/Chicago). Generation is paused at the user's request
 | 13 | CLIP 13 — You Hired Them All | da4bd93f-4e26-4655-a12b-36e2d53e938a |
 | 14 | CLIP 14 — Service Corridor | 2a0a9689-0acf-4c2a-a94d-6a882a4b1982 |
 | 15 | CLIP 15 — Hidden Camera | 5b65ec21-9b02-4eba-8df4-8844df9beb7f |
+| 16 | CLIP 16 — I Remember | 82fc5c91-9b12-4d81-be1c-4f0aa1de48c1 |
+| 17 | CLIP 17 — Another Trap | 7b522160-51c6-4dde-98b1-8fdcc6e2cd37 |
+| 18 | CLIP 18 — Someone in the Reflection | 216be595-ae69-4729-946d-dc275b01d5b2 |
+| 19 | CLIP 19 — The Handler | fdb52c08-c6a5-4c9f-8f08-5dd6162536b7 |
+| 20 | CLIP 20 — The Countermove | 091e9d4d-fd9c-4341-bc7d-eabb378ba380 |
+| 21 | CLIP 21 — The Final Loop | 75856373-53cc-4d03-8b5e-02247aacf920 |
+| 22 | CLIP 22 — Evidence on the Screens | 1c0bd409-de49-4223-8e69-ab20be7b075f |
+| 23 | CLIP 23 — One Second After | 7b4ed258-521f-49e6-a423-dcbd3b3327cb |
+| 24 | CLIP 24 — The Watch Holds | d8893b90-f490-49c7-ae19-0a8eb0364ca5 |
 
 CLIP 06 was submitted twice while the first submission response was delayed. Both renders were retained and named distinctly. CLIP 06–15 were submitted from their matching SHOT stills under Create with AI → Create Video From Prompt → Use from Library. The matching full prompt from `02 - Story and Prompts/Video Prompts 06-24.md` was pasted into Video and Audio Prompt, with Advanced Mode, Automatic Enhance My Video Prompt, and Manual Video Length 8 seconds enabled. Public gallery sharing remained off. The gallery's duration labels are unreliable; a detailed continuity and audio audit and local downloads remain outstanding.
 
 CLIP 11–15 gallery cards were matched to receipt IDs and renamed after rendering. Each was played in the VideoExpress player through its final beat. The player reported approximately 8.04 seconds and 1080×1920 for each; this is a basic playback and frame check, not an independent speech, audio-mix, or frame-by-frame continuity audit. No CLIP 11–15 files have been downloaded locally yet.
+
+CLIP 16–24 were submitted using their corresponding numbered source stills and full numbered prompts, with the same Advanced Mode, automatic prompt enhancement, 8-second manual length, and private gallery settings. Each gallery card was matched to its receipt and renamed. All nine were opened in VideoExpress's player and sampled during playback. The player reported 8.041667 seconds and 1080×1920 for each after buffering; visible scenes and motion were coherent. Visual QA flags: CLIP 21's background countdown displayed malformed digits during playback; CLIP 23's background midnight display also appeared imperfect/partly unreadable. These graphics need review or replacement before final edit. This was a visual playback check, not an independent audio or frame-by-frame continuity audit. CLIP 16–24 have not been downloaded locally.
