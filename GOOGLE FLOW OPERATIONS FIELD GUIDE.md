@@ -63,6 +63,13 @@ Do not rely on a remembered model matrix. Google currently lists different suppo
 
 ## 7. Editing, versioning, and assembling
 
+### Local project handoff
+
+- When the story and working title are approved, create a named project folder in the active Google-Flow workspace immediately. Keep story notes/prompts, references, approved Flow downloads, captions/audio, editor working files, and final exports together in subfolders; record the path in Project State.
+- Download each approved source clip and the ready Scenebuilder scene into that project's Flow-downloads folder. Check that each file opens and matches the expected clip/sequence before editing further. Preserve originals.
+- Resume the same production in its existing chat; when a new chat is needed, reuse the same workspace and local project folder rather than creating a duplicate.
+- Keep project media local by default. The public workflow repository should contain reusable guidance, not private references or generated production assets, unless the user explicitly asks to publish those assets.
+
 - Standard video edits do not remove the original; History retains previous versions and prompts. Agent edits are automatically saved into the asset stack. Compare versions and preserve the intended take.
 - Current Google Help documents Gemini Omni Flash editing in supported regions: video input up to 60 seconds/1 GB in listed formats; clips longer than 30 seconds must be trimmed to 30 seconds; edit a selected segment up to 10 seconds; up to three follow-up turns may retain context. Verify these limits in Help and the live editor before starting because rollout can change.
 - Save an approved earlier edited-video version to the project from History before placing it in Scenebuilder.

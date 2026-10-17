@@ -66,6 +66,10 @@ The broader [Google Flow Operations Field Guide](GOOGLE%20FLOW%20OPERATIONS%20FI
 
 Google's current Help Center documents the desktop editor and Scenebuilder here: [Edit videos and build scenes in Google Flow](https://support.google.com/flow/answer/16935718?hl=en). Model compatibility, upload constraints, geography, and costs can change.
 
+## Local production folders and editing handoff
+
+Once the story and working title are agreed, create the named project folder under the active Google-Flow workspace immediately. Keep the project's references, story and prompts, Flow downloads, captions/audio, editable HyperFrames working files, and final exports together there. Download and verify approved Flow clips and the assembled scene before post-production; preserve the originals. Continue the edit in the same chat and reuse the same project folder if resuming elsewhere. Keep private project media local by default; publish reusable workflow documentation separately. Use HyperFrames for timed captions, detailed sound, titles, and final finishing beyond Scenebuilder's documented sequencing/trimming controls.
+
 ## Approval checkpoints
 
 The phases are: **Style → Story → Cast → Runtime/Scenes/Shots → Speech/Audio → Format/Platforms → Concept Approval → Text Production Package → Images → Flow Video Clips → Editing Handoff → Posting Package**.

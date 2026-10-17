@@ -1,5 +1,14 @@
 # Google Flow Video Editing Prompt
 
+## Project handoff defaults
+
+- Create a named local project folder in the active Google-Flow workspace as soon as the story/title is locked. Keep references, prompts, Flow downloads, captions/audio, editable HyperFrames files, and final exports in that project folder.
+- Download and verify approved source clips and the assembled Flow scene before editing. Preserve the originals.
+- Continue the edit in the same chat and use the available HyperFrames skill when the user is ready. Save editable materials in the project's HyperFrames working-files folder and checked renders in final exports.
+- Flow Scenebuilder handles basic sequencing, reordering, trimming, preview, and download. Create timed captions, detailed audio mixes, titles, and frame-accurate finishing in post-production unless the current Flow UI explicitly exposes the needed control.
+- Time captions against the final dialogue edit. For a word-highlight style when suitable: uppercase 1–3 word bursts, heavy sans serif, white base with active word in red, dark outline/shadow, mobile-safe placement; deliver `.srt` and styled `.ass` when supported. Keep captions clear of faces and essential props.
+- When a supplied prompt includes an unrelated example or conflicts with the approved runtime/aspect ratio, transfer only the applicable craft guidance and follow the project's locked brief. Don't silently extend runtime with a title card.
+
 Use this prompt in the Google Flow Agent when planning, generating, revising, or assembling a beginner video. Replace bracketed fields. Leave unknown optional fields blank or ask the user before making a consequential creative choice.
 
 ## Project brief

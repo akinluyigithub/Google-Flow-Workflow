@@ -52,6 +52,10 @@ Research cultural/regional story traditions separately using credible culture-sp
 
 The twelve production phases below are a completeness checklist, not twelve separate user interviews. For FlowStart, merge Phase 1 with Phase 2 under Decision Gate 2; merge Phases 3–6 into the single complete-proposal decision; use Phase 7 for the story approval in Gate 3; prepare Phase 8 as part of the Gate 4 package; then ask once for image-provider choice in Gate 5. Do not duplicate an approval already given at its designated gate.
 
+## Local project folder and chat continuity
+
+Immediately after the user agrees to the story and working title, create a matching project subfolder under the active Google-Flow workspace, before generating project assets. Use subfolders for references, story/prompts, Flow downloads, captions/audio, editable HyperFrames files, and final exports. Store a short README, current Project State, research/continuity notes, and approved prompts there. Reuse the same workspace/project folder when the user resumes in a new chat; do not duplicate the folder. Record the exact local path in Project State. Keep private references and generated media local; publish reusable workflow documentation only unless the user explicitly asks to publish project media.
+
 ## Phase 1 — Research, then choose creative direction
 
 Perform relevant platform trend research before the first recommendation. Bundle visual style and story format in one choice when feasible; include the full practical menu, viral micro-drama, a marked recommendation, and choose-for-me/own-idea paths. Carry forward any style or format the user already specified.
@@ -217,6 +221,7 @@ Use Flow's editor for shot selection, simple sequence assembly, trims, and suppo
 4. Preview the full sequence after each group of trims. Watch cut points at normal speed; when a join feels wrong, replay around the join and choose a better in/out point. Avoid cutting off a word, gesture, impact, or reaction.
 5. Check sequence duration against the approved target. Scenebuilder supports sequencing/reordering/trimming/preview/download; do not assume it provides every nonlinear editing function (multiple precision audio tracks, advanced transitions, captions, keyframes, color grading, or frame-accurate automation).
 6. Download the scene when the cut is ready. If further finishing is needed, use a dedicated editor with the approved export and project handoff.
+7. Download approved source clips as well as the assembled scene into the project's Flow-downloads folder. Verify each saved file and retain originals.
 
 ### B. Refine a selected clip with Flow Agent or Video-to-Video
 
@@ -245,7 +250,7 @@ Official current reference: [Edit videos and build scenes in Google Flow](https:
 
 ## Phase 11 — Editing handoff (when additional finishing is needed)
 
-Prepare a project-specific, copy-ready handoff using actual approved files and trim decisions. If using Codex Desktop, invoke `@Video Editing System` by name; do not claim another app ran it. Include locked story/style, platform/aspect/runtime, clip order, chosen takes, verified source in/out points, dialogue and captions, music/SFX sources, continuity issues, export settings, QA checks, and actual filenames. Mark missing paths/timing as pending, never invent them. Preserve approved story, voices and timing unless a revision is approved. Caption typography/timing is applied in the edit, not generated into images. Only claim files actually rendered and inspected.
+Prepare a project-specific, copy-ready handoff using actual approved files and trim decisions. Continue in the same chat and invoke the available HyperFrames skill for editing; do not start a new chat for the same production or imply the skill has run before it has. Put editable composition/project files under the project's HyperFrames working-files folder and verified renders under final exports. Include locked story/style, platform/aspect/runtime, clip order, chosen takes, verified source in/out points, dialogue and captions, music/SFX sources, continuity issues, export settings, QA checks, and actual filenames. Mark missing paths/timing as pending, never invent them. Preserve approved story, voices and timing unless a revision is approved. Caption typography/timing is applied in the edit, not generated into images. Add and time captions after the cut/dialogue is locked, inspect mobile-safe placement, and provide `.srt` plus styled `.ass` where supported. Treat supplied prompts as references: use applicable editing guidance, not unrelated example content or conflicting sample runtimes/aspect labels. Only claim files actually rendered and inspected.
 
 After clip completion, ask whether the user wants an editing package/handoff. Phase 11 preparation does not authorize paid Flow generation or publishing.
 
