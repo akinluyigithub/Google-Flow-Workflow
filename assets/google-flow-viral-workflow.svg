@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520" role="img" aria-labelledby="title desc">
+  <title id="title">Google Flow viral video workflow</title>
+  <desc id="desc">A twelve-phase workflow from style and story planning through provider-selected images, approved Google Flow video clips, Scenebuilder editing, and a posting package.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10172a"/><stop offset="1" stop-color="#202c46"/></linearGradient>
+    <linearGradient id="image" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7657f5"/><stop offset="1" stop-color="#a34cf0"/></linearGradient>
+    <linearGradient id="video" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff8b45"/><stop offset="1" stop-color="#ff4d75"/></linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#93a7c9"/></marker>
+    <style>
+      .title{font:700 28px Arial,sans-serif;fill:#f6f8ff}.subtitle{font:400 15px Arial,sans-serif;fill:#b9c6dc}
+      .box{fill:#263653;stroke:#4c6286;stroke-width:1.5}.box2{fill:#29334f;stroke:#62729a;stroke-width:1.5}
+      .bright{fill:url(#image);stroke:#c7a7ff;stroke-width:1.5}.hot{fill:url(#video);stroke:#ffc39b;stroke-width:1.5}
+      .label{font:700 16px Arial,sans-serif;fill:#fff}.small{font:400 12px Arial,sans-serif;fill:#e0e8f6}
+      .number{font:700 12px Arial,sans-serif;fill:#bbcae2}.line{stroke:#93a7c9;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1400" height="520" rx="24" fill="url(#bg)"/>
+  <text x="48" y="52" class="title">Google Flow Viral Video Workflow</text>
+  <text x="48" y="80" class="subtitle">Plan first · choose the image provider · approve every paid Flow video clip · edit and review before export</text>
+  <!-- Row 1 -->
+  <g transform="translate(48,130)">
+    <rect class="box" width="200" height="106" rx="14"/><text x="18" y="25" class="number">PHASES 1–2</text><text x="18" y="53" class="label">Style &amp; Story</text><text x="18" y="77" class="small">Hook · category · original idea</text>
+  </g>
+  <path class="line" d="M250 183 H280"/>
+  <g transform="translate(290,130)">
+    <rect class="box" width="200" height="106" rx="14"/><text x="18" y="25" class="number">PHASES 3–6</text><text x="18" y="53" class="label">Cast &amp; Plan</text><text x="18" y="77" class="small">Runtime · shots · sound · format</text>
+  </g>
+  <path class="line" d="M492 183 H522"/>
+  <g transform="translate(532,130)">
+    <rect class="box2" width="200" height="106" rx="14"/><text x="18" y="25" class="number">PHASES 7–8</text><text x="18" y="53" class="label">Approve Concept</text><text x="18" y="77" class="small">Build text-only production package</text>
+  </g>
+  <path class="line" d="M734 183 H764"/>
+  <g transform="translate(774,130)">
+    <rect class="bright" width="250" height="106" rx="14"/><text x="18" y="25" class="number" fill="#fff">PHASE 9 · IMAGE GATE</text><text x="18" y="53" class="label">Choose Image Provider</text><text x="18" y="77" class="small">ChatGPT Images or Google Flow</text><text x="18" y="95" class="small">9:16 · 1 image default · inspect</text>
+  </g>
+  <path class="line" d="M1026 183 H1056"/>
+  <g transform="translate(1066,130)">
+    <rect class="hot" width="286" height="106" rx="14"/><text x="18" y="25" class="number">PHASE 10 · VIDEO GATE</text><text x="18" y="53" class="label">Approve Each Flow Clip</text><text x="18" y="77" class="small">Prompt · model · settings · live cost</text><text x="18" y="95" class="small">One clip at a time · review endpoint</text>
+  </g>
+  <!-- connectors down/return -->
+  <path class="line" d="M1209 238 V300"/>
+  <g transform="translate(1066,318)">
+    <rect class="box2" width="286" height="106" rx="14"/><text x="18" y="25" class="number">PHASE 11</text><text x="18" y="53" class="label">Edit &amp; Assemble</text><text x="18" y="77" class="small">Scenebuilder: order · trim · preview</text><text x="18" y="95" class="small">Export, verify, or hand off for finishing</text>
+  </g>
+  <path class="line" d="M1064 371 H1034"/>
+  <g transform="translate(774,318)">
+    <rect class="box" width="250" height="106" rx="14"/><text x="18" y="25" class="number">PHASE 12</text><text x="18" y="53" class="label">Posting Package</text><text x="18" y="77" class="small">YouTube · Shorts · TikTok · Reels</text><text x="18" y="95" class="small">No publishing without instruction</text>
+  </g>
+  <path class="line" d="M772 371 H742"/>
+  <g transform="translate(532,318)">
+    <rect class="box" width="200" height="106" rx="14"/><text x="18" y="25" class="number">CONTINUITY</text><text x="18" y="53" class="label">Inspect &amp; Revise</text><text x="18" y="77" class="small">Keep approved versions and manifest</text>
+  </g>
+  <text x="48" y="478" class="subtitle">Approval is per asset. Preparing prompts, images, or an edit plan never authorizes paid video generation.</text>
+</svg>

@@ -21,6 +21,10 @@ Use this prompt in the Google Flow Agent when planning, generating, revising, or
 
 Act as my beginner-friendly Google Flow creative producer and editor. First turn my brief into a concise shot plan and flag only important missing decisions. Do not generate media until I approve the plan and the active model, mode, duration, output count, aspect ratio, and displayed credit cost are confirmed. Keep project continuity consistent across shots. Preserve originals and useful versions. Before changing or deleting project assets, ask me to confirm the exact asset and action.
 
+For video generations, obtain explicit approval separately for every clip. Show the exact clip prompt, model/mode, frame or ingredient inputs, aspect ratio, duration, output count, and live displayed credit cost. Approval for planning, a previous clip, or a production package does not authorize another video generation. Never disable Flow's generation confirmation.
+
+Before producing still images, ask whether to use ChatGPT Images or Google Flow Images. Default to 9:16 portrait and one image per prompt; if Flow Images is selected, use Nano Banana 2.1 when available. A larger Flow batch is optional: show the number of images and live cost and ask before submitting. Inspect the results and offer a focused rerun or provider change if needed.
+
 When proposing settings, use only options visible in the current Flow interface. Model names, features, output lengths, credit costs, and availability can change by account, region, and rollout. If a requested mode is not supported by the active model, tell me and offer a supported alternative.
 
 ## Shot plan template
@@ -102,6 +106,18 @@ Inspect the join carefully; extend features and restrictions vary by model.
 After selecting the desired clips, ask the Agent or use Scenebuilder:
 
 > Arrange the selected clips in this order: [shot order]. Keep the story understandable: [brief progression]. Trim each clip at a natural action point, preserve continuity, and preview the full sequence. Flag any jump in character, location, lighting, audio, or pacing before final export. Do not delete or replace source clips. Export/download the scene at the available quality for [destination].
+
+## Google Flow edit request
+
+For a generated edit, select the exact clip and request one targeted change:
+
+> Keep [identity, action, framing, timing, wardrobe, props, setting, and sound that must remain]. Change only [one requested element] to [desired outcome]. Preserve [continuity details]. Do not change [other fixed elements].
+
+Before generating an AI edit, verify that the selected model supports video-to-video editing in this account/region, identify the segment and current duration limit, and show the displayed credit cost. Wait for explicit approval for that edit. Compare the result against the original in History/asset stack; retain the original and choose the desired version only after review.
+
+For simple cuts, add accepted clips to Scenebuilder, place them in story order, use in/out handles to trim, then preview the whole sequence and inspect every join for cut dialogue, unfinished motion, repeated frames, pacing, and abrupt audio. Check runtime and export the scene. Use a dedicated editor for precise multitrack audio, captions, titles, color work, or frame-accurate finishing that Flow does not currently expose.
+
+Use **Extend** only after checking that the selected Veo model supports it. Describe the continuation from the final visible moment, verify its cost, and obtain clip-specific approval before generation. Extended clips may restrict other edit modes afterward.
 
 ## Review checklist
 
