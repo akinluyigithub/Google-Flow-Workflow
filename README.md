@@ -8,7 +8,7 @@ An approval-driven production playbook for planning original short-form stories,
 
 **Core rule:** still-image production begins with one provider choice—ChatGPT Images or Google Flow Images. That choice authorizes the planned image set in the approved production package. Generate and inspect the set, retry clear defects without per-image approvals, then show all results together for selection. Videos render in Google Flow, and each video clip requires explicit approval of its prompt, settings, and displayed credit cost before generation.
 
-**Start the workflow by saying `FlowStart`.** It begins at visual-style selection, then advances through the phases while preserving all concept, image, cost, clip, editing, and publishing approval gates.
+**Start the workflow by saying `FlowStart`.** Before making trend, format, hook, or platform recommendations, the assistant researches dated evidence across TikTok, YouTube Shorts, and Instagram Reels (plus any other platforms in the brief) and gives a compact cited research basis. The workflow stays interactive, advances after every choice, aims for five required decisions before the first image batch, and never exceeds seven unless the user asks to explore further. Related creative choices are bundled.
 
 **Easy choices:** Every decision and approval gate presents lettered or numbered options, with one **Recommended** choice and a brief reason. Show the full practical menu (often six or seven choices) instead of arbitrarily narrowing open-ended decisions. Include **Choose for me** and **Describe my own** where relevant; use short **Approve / Revise / Stop** menus for approval gates. In chat, reply with just the letter or number.
 
@@ -21,6 +21,22 @@ An approval-driven production playbook for planning original short-form stories,
 - [Workflow Diagram](assets/google-flow-viral-workflow.svg) — visual overview.
 - [Google Flow Operations Field Guide](GOOGLE%20FLOW%20OPERATIONS%20FIELD%20GUIDE.md) — current official-documentation-derived guidance for models, modes, settings, credits, privacy, edits, and asset management.
 - [Google Flow Character and Voice Guide](GOOGLE%20FLOW%20CHARACTER%20AND%20VOICE%20GUIDE.md) — character creation, voice customization, attachment, and supported voice-reference workflow.
+
+## FlowStart research and decision limits
+
+- Recommendations begin with current, dated research across TikTok, YouTube Shorts, and Instagram Reels. Evidence and creative inference are labeled separately; sources are linked in the response and kept in the project note.
+- Trend research targets the user's stated niche, language, geography, and audience where known. It never guarantees reach or claims a universal trend from one forecast.
+- Before the image batch, the assistant aims for five required decision questions and never exceeds seven unless the user requests more exploration. Style, format, story, cast/voice, setting, script, runtime, shot plan, framing, and sound are bundled where possible.
+- The assistant keeps the process moving after each answer. Image-provider choice authorizes the planned still-image batch and its autonomous QC/retries. Each paid Google Flow video generation still requires its own explicit, clip-specific approval.
+
+### Trend research baseline checked October 16, 2026
+
+These current references inform the research method; each new FlowStart must check for newer evidence and niche-specific signals:
+
+- [TikTok Next 2026 forecast](https://newsroom.tiktok.com/introducing-tiktok-next-2026-our-trend-forecast-for-marketers-for-the-year-ahead?_hsmi=399120832&lang=en) (Jan. 14, 2026): TikTok's forecast emphasizes active discovery, curiosity, community, and meaningful audience value. It is a forecast, not proof of a niche trend.
+- [YouTube Shorts Series and micro-drama update](https://blog.youtube/news-and-events/made-on-youtube-creators-shorts-series-tv-features/) (Sept. 23, 2026): YouTube announced episodic Shorts organization and reported more than 6.5 billion micro-drama views in H1 2026, with watch time up over 50% year over year. This indicates platform-scale interest, not guaranteed performance for a particular series.
+- [Meta's 2026 update](https://about.fb.com/news/2026/01/2026-ai-drives-performance/) (Jan. 28, 2026): Meta said 75% of Instagram recommendations in the US in Q4 2025 came from original posts; the geography and reporting period matter.
+- [Metricool's 2026 short-form report](https://metricool.com/short-video-report/) (Aug. 26, 2026): third-party cross-platform analysis of more than 6.1 million videos across Instagram, TikTok, and YouTube; use it for comparison context, not prediction.
 
 ## Default image and video controls
 

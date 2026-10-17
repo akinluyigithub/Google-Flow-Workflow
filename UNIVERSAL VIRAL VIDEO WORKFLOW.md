@@ -6,12 +6,34 @@ This is the operating playbook for creating short-form stories and videos with G
 
 ## One-word trigger
 
-The user can start this complete workflow by saying **FlowStart** (case-insensitive). Treat the standalone trigger as the request to begin **Phase 1 — Choose visual style** in the current conversation/project. Begin immediately with one recommendation and the numbered style choices; do not ask what FlowStart means or restart a previously active FlowStart project. Always include **viral micro-drama series** (serialized short episodes with a strong hook/cliffhanger) as one of the story-category choices in Phase 2, so the user can choose it or another format. If a Project State already exists, resume at its recorded next action. FlowStart authorizes planning and the initial style step only. It does not bypass concept approval, image-provider choice, the individual video prompt/model/settings/cost approval, editing choices, or publishing authorization. Selecting an image provider authorizes all planned still images in the approved production package; generate and QC them without per-prompt or per-image approval. Continue one decision at a time and stop at every required gate.
+The user can start this complete workflow by saying **FlowStart** (case-insensitive). Treat the standalone trigger as the request to begin in the current conversation/project. If a Project State already exists, resume at its recorded next action. Start recommendations only after current, relevant trend research (see **Research before recommendations** below). Always include **viral micro-drama series** as a story-format choice. FlowStart authorizes planning only; it does not bypass concept approval, image-provider choice, individual video prompt/model/settings/cost approval, editing choices, or publishing authorization. Selecting an image provider authorizes all planned still images in the approved production package; generate and QC them without per-prompt or per-image approval.
+
+### Keep FlowStart interactive and brief
+
+Aim for **five required decision questions before the first image batch**, never more than **seven** (use a sixth or seventh only if a material ambiguity cannot responsibly be inferred). Track `pre-image decisions: n/5` and the hard ceiling `7` in Project State. Bundle related choices and propose reasonable defaults; do not separately ask the user to approve style, cast appearance, voice, location, dialogue, runtime, shots, aspect ratio, and platform when these can be recommended together. At every answer, immediately advance to the next unfinished gate with easy labeled choices instead of ending on a passive acknowledgement.
+
+Suggested five-gate path; merge or skip a gate if the brief already answers it:
+
+1. Brief, goal, audience, and primary platform(s).
+2. Researched creative direction: format/category plus visual style in one menu. Always include viral micro-drama and **Choose for me / Describe my own**.
+3. One researched story concept, with compact alternatives and an approve/revise/choose-another gate.
+4. One complete production proposal: cast and voices, setting/props, script/dialogue, runtime/shot structure, aspect/platform framing, sound, continuity, and the complete self-checked image-prompt/asset plan. Ask approve, revise, or stop; do not approve routine subfields one by one.
+5. Image provider choice. This authorizes the planned image batch; generate and inspect all planned stills, retry clear defects autonomously, then present the batch together for one image selection/lock response.
+
+Do not force all five questions when information is already available. Ask only when missing information materially affects the story, feasibility, safety, cost, or continuity; otherwise state the assumption and move forward. Image selection/revision after the authorized batch is feedback on completed work, not a new pre-generation question. No gate authorizes a Google Flow video generation.
+
+### Research before recommendations
+
+Before making a FlowStart recommendation about trends, format, hooks, genre, platform fit, or audience strategy, browse current evidence. At minimum, check TikTok, YouTube Shorts, and Instagram Reels; include Facebook Reels or any other platform named in the brief. Research the stated niche, audience, language, and geography when known; never assume these. Prefer platform-native trend discovery and official platform trend/culture/creator reports, supplemented by recent reputable cross-platform analysis where it helps compare platforms. Native trend pages may be personalized or region-limited; disclose if they cannot be inspected. Global forecasts do not establish that a particular sound, story, or format is trending among this user's target audience today.
+
+Use dated sources, preferring current-year reports and recent primary evidence for fast-changing claims. Give each recommendation a compact **Research basis** (usually 2–4 bullets): source/platform, publication or checked date, relevant evidence, and how it informed the idea. Link sources in the response and keep a short research log in Project State or the production package. Clearly separate reported evidence from creative inference. Never fabricate metrics, rankings, platform access, or a guarantee of virality. When current primary evidence is unavailable, disclose that and label the suggestion as evergreen craft judgment. Re-check when substantial time has elapsed or the user changes niche/platform.
+
+Research cultural/regional story traditions separately using credible culture-specific, academic, or industry sources. Treat a tradition as a researched creative influence, not a claim that a whole culture tells stories one way. Avoid stereotypes and generic cultural mashups.
 
 ## Non-negotiable operating rules
 
 - Never assume country, culture, language, accent, identity, audience, or nationality. Use the user's choices and story context.
-- Use **Guided Mode** by default. Do not ask the user to choose a mode before Phase 1. Work through one material decision or approval at a time. At creative choices, state a brief recommendation/reason/trade-off, then provide simple labeled options (A/B/C or 1/2/3) that the user can answer with one character. Do not require the user to copy prompts or compose prose just to proceed.
+- Use **Guided Mode** by default. Do not ask the user to choose a mode. Bundle related creative fields into a small number of decisions, following the five-gate target and seven-gate ceiling above. For each gate, state a concise recommendation and research basis where relevant, then provide keyboard-friendly choices. Do not require the user to copy prompts or compose prose to proceed.
 - At every meaningful decision or gate, include **Choose for me** and **Describe my own** where applicable. Keep these as concise options, such as `Y — Choose for me` and `Z — Describe my own`. For approval gates, always provide explicit, easy choices such as `1 — APPROVE`, `2 — REVISE`, `3 — STOP`; never rely on a free-text approval phrase alone. Approval must be explicit and gate-specific.
 - Always mark one available choice **Recommended** and give a short reason. The user may choose any other option. At approval gates, recommend the safe/next-step choice only when appropriate; never preselect approval or imply that the user has approved.
 - Do not arbitrarily reduce a phase's meaningful menu to three choices. Show the full practical menu when it has up to seven or eight options, including browse/search/custom/choose-for-me routes where relevant. Group large catalogs by category and ask the user to pick a category before presenting a long list. Reserve a short three-choice menu for binary approval/revision/stop gates, not for open-ended creative selection.
@@ -22,13 +44,19 @@ The user can start this complete workflow by saying **FlowStart** (case-insensit
 - Distinguish idea/prompt planning, saved files, uploaded files, generated results, reviewed results, user approval, and audience performance. Claim only what has visible or file-based evidence.
 - Keep generated content original. Explain named studio/creator styles through concrete traits; do not imitate a living creator's exact style. Never promise virality or fabricate trend metrics.
 - Preserve originals and edit history. Before deletion, trashing, public sharing, or replacing user assets, identify the target and obtain approval.
-- Maintain a compact **Project State** after decisions: phase; approved concept/version; style; story; cast/voices; runtime and shot count; aspect/platform; chosen image provider; approved images; video prompt/model/settings/cost/approval per clip; current Flow edit state; manifest; next action.
+- Maintain a compact **Project State** after decisions: current phase and pre-image decision count (n/5; hard ceiling 7); research note with sources/dates/limits; approved concept/version; style; story; cast/voices; runtime and shot count; aspect/platform; chosen image provider; approved images; video prompt/model/settings/cost/approval per clip; current Flow edit state; manifest; next action.
 
 ## Workflow map
 
 ![Workflow from creative brief through approved images, individually authorized Flow clips, editing, and posting package](assets/google-flow-viral-workflow.svg)
 
-## Phase 1 — Choose visual style (always first)
+The twelve production phases below are a completeness checklist, not twelve separate user interviews. For FlowStart, merge Phase 1 with Phase 2 under Decision Gate 2; merge Phases 3–6 into the single complete-proposal decision; use Phase 7 for the story approval in Gate 3; prepare Phase 8 as part of the Gate 4 package; then ask once for image-provider choice in Gate 5. Do not duplicate an approval already given at its designated gate.
+
+## Phase 1 — Research, then choose creative direction
+
+Perform relevant platform trend research before the first recommendation. Bundle visual style and story format in one choice when feasible; include the full practical menu, viral micro-drama, a marked recommendation, and choose-for-me/own-idea paths. Carry forward any style or format the user already specified.
+
+If the user wants to browse visual styles, use this reference menu; do not make selecting from the catalog a separate required turn when style and format can be decided together.
 
 Give one clear recommendation and invite a choice:
 
@@ -40,13 +68,13 @@ Give one clear recommendation and invite a choice:
 6. Describe a custom look
 7. Choose for me
 
-Featured codes: F1 3D Claymation; F2 Ghibli-inspired hand-painted 2D; F3 Cinematic; F4 Selfie UGC; F5 Italian Brainrot surreal; F6 Pixar-inspired family 3D; F7 AI Talking Objects; F8 Music Video; F9 Cyberpunk; F10 Documentary. The complete 243-entry catalog is in [STYLE LIBRARY.md](STYLE%20LIBRARY.md). Preserve F/L catalog codes. Offer useful category subsets instead of dumping all entries. Do not proceed to story before style is selected.
+Featured codes: F1 3D Claymation; F2 Ghibli-inspired hand-painted 2D; F3 Cinematic; F4 Selfie UGC; F5 Italian Brainrot surreal; F6 Pixar-inspired family 3D; F7 AI Talking Objects; F8 Music Video; F9 Cyberpunk; F10 Documentary. The complete 243-entry catalog is in [STYLE LIBRARY.md](STYLE%20LIBRARY.md). Preserve F/L catalog codes. Offer useful category subsets instead of dumping all entries.
 
 Record separate controls for main medium/render style, camera language, lighting/mood, and editing treatment.
 
 ## Phase 2 — Story category and original concept
 
-Recommend one style-compatible category and why. Include **viral micro-drama series** in the story-category menu every time FlowStart reaches this phase: serialized short episodes with recurring characters, escalating reveals, and a cliffhanger/payoff pattern. It is a choice, never a forced format. Offer accept, browse compatible categories, own category, or choose for me. After category selection, recommend an original title, premise, and immediate visual hook. Offer accept, 10 tailored ideas, own idea, or another recommendation. If providing 10, each gets title, one-sentence premise, concrete visual hook, and editorial scores. When the user chooses viral micro-drama, use the streamlined researched pitch below instead of a long idea-scoring exercise.
+Recommend one style-compatible category and why. Include **viral micro-drama series** in the story-format menu every time: serialized short episodes with recurring characters, escalating reveals, and a cliffhanger/payoff pattern. It is a choice, never a forced format. This menu is part of Gate 2; do not ask a separate question after style selection. For Gate 3, recommend an original title, premise, and immediate visual hook alongside compact alternatives. Offer accept, revise, another idea, or choose for me. When the user chooses viral micro-drama, use the streamlined researched pitch below instead of a long idea-scoring exercise. Do not require ten-item scoring unless the user asks for it.
 
 Story category candidates (not a certified ranking): micro-drama/cliffhanger; emotional twist; relatable POV/UGC; surreal meme; talking objects; mini-documentary; history/mystery; science/what-if; responsible true crime; internet lore; gaming; fantasy; fictional animal story; craft/stop-motion; ASMR/restoration; transformation; behind-the-scenes; challenge; music-synced story; food; travel/culture; relationships/redemption; sci-fi; action/suspense; analog horror; parody; interactive mystery; product story; educational skill; trend explainer; cozy nostalgia; fashion/design; sports underdog; recurring character lore; impossible visual spectacle; or a custom category.
 
@@ -56,13 +84,13 @@ When the user chooses viral micro-drama (or says “micro-drama”), do targeted
 
 Present one original working title and a compact pitch that covers: heroine/protagonist; goal; opposition; secret; stakes; love and betrayal; sweet romance; powerful family; revenge; love-after-marriage; and an immediate visual hook. Weave these ingredients into one coherent premise rather than a disconnected checklist. If a trope would make this specific story confusing or implausible, say briefly how it is being adapted; do not let trope density damage the central goal and cliffhanger.
 
-Then give a compact region/language menu, with one clearly marked recommendation and short rationale: **South Korean**, **Japanese**, **Chinese**, **English-language**, **American**, **British**, **Nigerian**, **Other (suggest a tradition/region)**, and **Another story in the recommended type**. Explain that a one-number reply selects the direction. Include a clear concept gate, e.g. `1 Approve this story`, `2 Revise this story`, `3 Choose another region/type`, `4 Give me another story in the recommended type`. Keep this gate separate from all paid video-generation approvals.
+Offer compact region/language alternatives as part of the same Gate 3 story menu, with one clearly marked recommendation and short rationale: **South Korean**, **Japanese**, **Chinese**, **English-language**, **American**, **British**, **Nigerian**, **Other (suggest a tradition/region)**, and **Another story in the recommended type**. Explain that a one-number reply selects the direction. Bundle region alternatives with story alternatives; do not ask a region question followed by a second story approval question. Include `1 Approve recommendation`, `2 Revise`, `3 Choose another region/story`, and `4 Give me another story in the recommended type`. Keep this gate separate from paid video approvals.
 
-Score concepts as editorial judgment (not observed audience performance): visual appeal, curiosity, emotion, originality, clarity, feasibility, and platform fit. Include a retention arc: immediate hook, setup, escalation, payoff, and ending/loop. Use meaningful developments if repetition risks attention; do not force a mechanical interval. For current trend rankings, browse dated primary/platform sources and distinguish evidence from creative prediction.
+Score concepts as editorial judgment (not observed audience performance): visual appeal, curiosity, emotion, originality, clarity, feasibility, and platform fit. Include a retention arc: immediate hook, setup, escalation, payoff, and ending/loop. Use meaningful developments if repetition risks attention; do not force a mechanical interval. For current trend claims, cite dated platform evidence and distinguish evidence from creative prediction; trends inform the recommendation but do not predict success.
 
 ## Phase 3 — Cast, voice design, and continuity
 
-Recommend 1–3 main characters and ask acceptance or a different count. Determine audience age context and whether cast includes people, animals/fantasy beings, talking objects, custom cast, or none. Every character who speaks must receive a voice lock and a reusable Flow Character voice during character setup; voice creation is part of completing the character, not a later optional enhancement. Mark non-speaking characters as voice not applicable. A multi-character story must give characters meaningful interaction.
+For the single complete production proposal (Gate 4), recommend 1–3 main characters and state the assumption; do not ask a separate cast-count question. Determine audience age context and whether cast includes people, animals/fantasy beings, talking objects, custom cast, or none. Every character who speaks must receive a voice lock and a reusable Flow Character voice during character setup; voice creation is part of completing the character, not a later optional enhancement. Mark non-speaking characters as voice not applicable. A multi-character story must give characters meaningful interaction.
 
 For each character, make one complete creative recommendation at once instead of asking a string of appearance and voice questions. Include name, role, age range where relevant, face/hair, build, wardrobe/accessories, behavior/personality, handedness if it affects action, and (if speaking) a complete voice proposal: voice name, suitable Flow preset, language/accent/pronunciation, register/pitch, texture, pace/articulation, baseline delivery, emotional range, signature behavior, and avoidances. Add one short representative sample line in character. The user can approve the complete proposal or request a focused revision. Do not require separate approval for routine subchoices such as voice name or sample wording.
 
@@ -84,21 +112,21 @@ Maintain a voice-bible record per speaker: `Character | Flow voice name and pres
 
 ## Phase 4 — Runtime, scenes, clips, and timing
 
-Recommend total runtime, then 1–20 scenes and clip count; let the user approve/change them. Distinguish narrative scenes, generated clips, and storyboard boundary images. Give every clip exact start, target end, and duration; timeline arithmetic must equal locked runtime, accounting for approved title cards and transition overlaps. Use only durations supported by the selected Flow model.
+Include recommended runtime, scene count, and clip count in the Gate 4 proposal. The user can revise them with the whole proposal; do not ask a separate runtime question. Distinguish narrative scenes, generated clips, and storyboard boundary images. Give every clip exact start, target end, and duration; timeline arithmetic must equal locked runtime, accounting for approved title cards and transition overlaps. Use only durations supported by the selected Flow model.
 
 For N continuous clips plan N+1 boundary stills: Clip i targets SHOT_i → SHOT_(i+1). Eight clips need SHOT_01–SHOT_09, with SHOT_09 as the terminal endpoint, plus any separate character/location/prop references. Check that every adjacent composition can connect with plausible motion before image production.
 
 ## Phase 5 — Dialogue and sound
 
-Recommend spoken dialogue, narration, continuous speech, or silent/music/SFX-only. The user chooses. Attribute every line to a named speaker. Use one unambiguous speaker at a time unless overlap is approved; non-speaking visible characters react silently. Record exact words, delivery, voice lock, and dialogue window per clip. Audit word count, plausible speaking pace, pauses, reaction allowance, and lip-sync. Shorten or redistribute lines during planning, then obtain approval for any changed dialogue/timing. Specify ambience, SFX, music, and ducking where relevant.
+Include the recommended speech/audio treatment and exact dialogue in the Gate 4 proposal. Offer a compact alternate treatment inside that bundled choice only if materially useful; do not ask a separate audio question. Attribute every line to a named speaker. Use one unambiguous speaker at a time unless overlap is approved; non-speaking visible characters react silently. Record exact words, delivery, voice lock, and dialogue window per clip. Audit word count, plausible speaking pace, pauses, reaction allowance, and lip-sync. Shorten or redistribute lines during planning, then obtain approval for any changed dialogue/timing. Specify ambience, SFX, music, and ducking where relevant.
 
 ## Phase 6 — Aspect ratio and platforms
 
-Recommend 9:16 for TikTok, Shorts, and Reels; 16:9 for standard/cinematic YouTube; or square when appropriate. Ask the user and lock the aspect ratio/platforms. Keep images, clips, cover/title assets, captions, and exports consistent. Keep faces and critical text in practical safe areas; verify current platform requirements before actual publishing. Separate aspect-ratio variants require their own plan and approval.
+Include the recommended aspect ratio and platform framing in the Gate 4 proposal (default 9:16 for TikTok, Shorts, and Reels; 16:9 for standard/cinematic YouTube; square when appropriate). Do not ask separate ratio and platform questions if the brief identifies them. Keep images, clips, cover/title assets, captions, and exports consistent. Keep faces and critical text in practical safe areas; verify current platform requirements before publishing. Separate aspect-ratio variants require their own plan and approval.
 
 ## Phase 7 — Concept approval gate
 
-Present the locked style and camera/lighting/edit treatment; category; title; hook; full story arc and payoff; cast and setting; runtime, scenes, clips and exact durations; aspect/platform; speech/audio plan; and feasibility/continuity risks. Include clear creative judgments without invented live metrics. Ask **APPROVE CONCEPT** or **REQUEST CHANGES**. Do not begin the production package until approved.
+This is Gate 3's story approval, not an additional question after the micro-drama or story menu. Present the selected/recommended story's title, hook, arc, payoff, and evidence basis. Gate 4 will bundle the remaining complete production proposal and its approve/revise choice. Do not ask the same concept approval again in Phase 7.
 
 ## Phase 8 — Text-only production package
 
@@ -233,7 +261,8 @@ Use a concise table after each gate:
 
 | Field | Current value |
 |---|---|
-| Phase / status | [phase; in progress / awaiting approval / complete] |
+| Phase / status / question count | [phase; in progress / awaiting approval / complete; pre-image n/5, hard ceiling 7] |
+| Trend research | [sources, dates, key evidence, scope/region limits] |
 | Approved concept and version | [title, story, version] |
 | Style / camera / lighting / edit | [locked choices] |
 | Cast / voices / continuity | [brief locks] |
@@ -248,6 +277,15 @@ Revisions invalidate only dependent downstream assets. State exactly which promp
 ## Source and maintenance notes
 
 The phases and quality rules are adapted from the user's attached **Universal Viral Video Creator — Version 2.0 Master Prompt**. The editing controls above are cross-checked against Google's current desktop Flow Help. Tutorials and UI labels can age; recheck official Flow documentation, the live model picker, supported modes, and displayed credits on each project.
+
+### Short-form trend research baseline (checked 2026-10-16)
+
+These are broad platform signals to seed research, not a real-time trending list. On every FlowStart, check for newer reports and native trend signals in the actual niche, audience, and geography; distinguish platform-reported evidence from creative inference.
+
+- [TikTok Next 2026](https://newsroom.tiktok.com/introducing-tiktok-next-2026-our-trend-forecast-for-marketers-for-the-year-ahead?_hsmi=399120832&lang=en) (Jan. 14, 2026) is TikTok's annual forecast and emphasizes active discovery, curiosity, community, and audience value. Treat a forecast as directional, not proof a format is currently trending for this user's target.
+- [Made On YouTube: Shorts Series and microdramas](https://blog.youtube/news-and-events/made-on-youtube-creators-shorts-series-tv-features/) (Sept. 23, 2026) reports 6.5 billion YouTube microdrama views in H1 2026 and over 50% watch-time growth year over year; YouTube also introduced Shorts seasons/episodes. This supports testing serialized storytelling on YouTube, not promising results for a particular series.
+- [Meta's 2026 update](https://about.fb.com/news/2026/01/2026-ai-drives-performance/) (Jan. 28, 2026) states that 75% of Instagram recommendations in the US in Q4 2025 came from original posts. Keep the US scope and Q4 period visible when using this signal.
+- [Metricool's 2026 short-form report](https://metricool.com/short-video-report/) (Aug. 26, 2026) describes analysis of over 6.1 million videos across Instagram, TikTok, and YouTube. Use its platform comparisons as third-party evidence, not an individual-account forecast.
 
 - [Google Flow Operations Field Guide](GOOGLE%20FLOW%20OPERATIONS%20FIELD%20GUIDE.md) — operational reference for settings layers, models, credits, references, edits, privacy, exports, troubleshooting, and current help links.
 - [Create videos in Google Flow](https://support.google.com/flow/answer/16353334?hl=en)
