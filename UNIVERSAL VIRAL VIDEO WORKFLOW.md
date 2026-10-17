@@ -183,6 +183,10 @@ Inventory supplied references and missing assets. Generate character references 
 
 Once the user selects the provider, generate the planned image prompt set without asking for extra scope or per-image approval. Inspect every result at a size that makes important details readable for prompt match, reference/character/location/prop continuity, plausible anatomy and object geometry, composition, aspect ratio, and neighboring-frame compatibility. **Check physical and visual logic, not just whether the image looks attractive:** hands must hold objects plausibly; object parts and reflections must agree with camera angle; screens must be on device glass facing the viewer; a phone's rear casing/back-camera side must never display screen UI; avoid impossible duplicate props, floating displays, reversed controls, fused fingers, inconsistent shadows, or unexplained changes in wardrobe/identity/location. Keep small device text abstract or unreadable unless exact text is essential. Compare each still with its exact prompt and approved reference sheets. Automatically retry a clearly defective still with a targeted prompt that changes only the failed dimension; keep useful versions and report the defect and what was regenerated. Reinspect the replacement at full size and do not accept it until it passes the same checks. After the full batch and QC, present the results together for one selection/lock decision before they are used as approved downstream references. A user can ask to stop or revise at any point. Preserve actual source file type and resolution; never claim the proposed filename exists until verified.
 
+### 9B.1. Mandatory naming and traceable review
+
+Name every completed result in Flow immediately, before presenting the batch: `REF 01 — Description` for references and `SHOT 01 — Story beat` for storyboard stills. Number shots in story order; use an episode prefix when multiple episodes share a project. Preserve each identifier during retries and add a version suffix when alternatives coexist. Verify the saved titles and maintain a local asset ledger mapping identifier, Flow title/URL/ID, version, prompt/reference inputs, review status, and actual download path. A batch is not ready for user selection while relevant tiles still have unexplained automatic titles. Present the same identifiers in the review list/contact sheet so the user can select, reject, or request changes by number. Label alternates and superseded versions; perform requested cleanup only on the identified assets and verify the remaining set. See [Asset Naming and Review Guide](ASSET%20NAMING%20AND%20REVIEW%20GUIDE.md). This is a production check, not an additional approval gate.
+
 ### 9C. Import external ChatGPT Images into Flow when needed
 
 Use the generated tool's saved local path. In the ChatGPT/Codex built-in in-app browser, open the current project's Flow workspace and add the asset through **Add media (+) → Upload** or the prompt's add-ingredient control. Wait for processing and verify it appears in the project's Uploads/Images area. Explicitly tell Flow whether it represents identity, location, product, style, or composition. Do not trigger an additional Flow generation just to upload. A literal drag from the chat image panel may be unsupported; use the upload picker and accurately describe the method used.
@@ -215,6 +219,8 @@ Before prompting, inspect the current model picker and official supported-featur
 - If only a first frame is supported, condition on the approved start image, inspect the actual ending, and use that saved real endpoint on the next clip where supported. Keep the storyboard target as a target, not a falsely claimed input.
 - If endpoint targeting is unsupported or geography/camera makes the pair impossible, explain the limitation and offer a compatible model, revised approved frame, or an edited cut. Do not switch models, alter story/timing, or create transitions without the user's choice and the required per-clip approval.
 - Audit identity, expression/pose, wardrobe, hands, scale, props, geography, lighting, weather, framing, direction and motion phase across each pair. Plan intermediate movement rather than asking for an unexplained jump.
+
+Name generated videos `CLIP 01 — Story beat — v01`, verify the title in Flow, and map each version to its approved generation settings and source `REF`/`SHOT` identifiers in the asset ledger before review. Preserve those identifiers through downloads and editing; follow the [Asset Naming and Review Guide](ASSET%20NAMING%20AND%20REVIEW%20GUIDE.md).
 
 ### Per-clip acceptance
 
@@ -291,7 +297,7 @@ Use a concise table after each gate:
 | Style / camera / lighting / edit | [locked choices] |
 | Cast / voices / continuity | [brief locks] |
 | Runtime / clips / aspect / platforms | [approved values] |
-| Image provider / model / asset status | [ChatGPT or Flow; IDs and approvals] |
+| Image provider / model / asset status | [ChatGPT or Flow; REF/SHOT labels, versions, IDs and review/approval status; asset-ledger path] |
 | Flow video approvals / credits | [per clip, pending or approved; displayed cost] |
 | Edit state | [sequence order, trims, versions, export status] |
 | Next action | [one next decision or gate] |

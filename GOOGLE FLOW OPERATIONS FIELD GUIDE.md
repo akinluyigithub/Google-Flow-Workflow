@@ -81,6 +81,8 @@ Do not rely on a remembered model matrix. Google currently lists different suppo
 
 ## 8. Project organization, sharing, and backup
 
+- **Mandatory naming before review:** rename each completed/imported asset using the actual Flow title field and verify it saved. Use `REF 01 — Description`, `SHOT 01 — Story beat`, and `CLIP 01 — Story beat — v01`; captured UI screenshots use `SCREENSHOT 01 — Purpose`. Preserve identifiers in versions, feedback, downloads, and the local asset ledger. See [Asset Naming and Review Guide](ASSET%20NAMING%20AND%20REVIEW%20GUIDE.md). Do not present a batch as ready with unexplained automatic titles. Names identify story order even when Flow sorts tiles by recent activity.
+
 - Project Settings can show generation prompt/type in tiles and switch between Grid and Batch views. Use descriptive project/asset names and nested Collections for characters, locations, selected frames, approved clips, and alternates.
 - Project operations documented by Flow include search/filter, moving assets to trash, download, sharing, and export. A shared creation link can allow anyone with the link to find/use it; verify sharing scope before sharing.
 - A Google Takeout Flow export may include generated/uploaded media, prompts, model and generation settings, voice configurations, trim offsets, projects, collections, characters, scenes, and edit stacks. Metadata JSON pairs map media IDs back to project/collection titles. Export is a backup copy; it does not delete server data.

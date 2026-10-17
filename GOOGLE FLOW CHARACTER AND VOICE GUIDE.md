@@ -4,6 +4,8 @@ Practical, beginner-friendly instructions for building reusable characters and a
 
 ## What a Flow Character stores
 
+Before review or reuse, label each character reference image `REF 01 — Character name` (with a distinguishing description/version as needed) and verify the saved Flow title. Keep the same identifier in the character bible, asset ledger, prompt inputs, and downloaded filename. The Character and saved voice retain recognizable character names. Follow [Asset Naming and Review Guide](ASSET%20NAMING%20AND%20REVIEW%20GUIDE.md).
+
 Google Flow lets a project character bundle visual and audio references for reuse. Google's current Help says a character needs at least one appearance image, and the creation flow accepts one or two. The character can be mentioned in a prompt by typing `@` followed by its name. References help carry identity across shots, but every result still needs continuity review.
 
 ## Create a character in a project

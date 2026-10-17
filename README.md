@@ -14,10 +14,13 @@ An approval-driven production playbook for planning original short-form stories,
 
 **Easy choices:** Every decision and approval gate presents lettered or numbered options, with one **Recommended** choice and a brief reason. Give at least 10 fitted options for open-ended creative menus when the catalog supports them. The first visual-style menu includes **Browse all 243 styles by category** and **Search all 243 styles**, plus vivid examples relevant to the brief. Include **Choose for me** and **Describe my own** where relevant; keep approval gates short with **Approve / Revise / Stop**. In chat, reply with just the letter or number.
 
+**Required asset labels:** Every generated or imported image is named in Flow before review: `REF 01 — Description` for references and `SHOT 01 — Story beat` for storyboard frames. Videos use `CLIP 01 — Story beat — v01`; UI captures use `SCREENSHOT 01 — Purpose`. Stable numbers and version tracking let you give feedback by identifier. The assistant verifies the saved titles, keeps an asset ledger, and preserves identifiers in downloaded filenames. See the [Asset Naming and Review Guide](ASSET%20NAMING%20AND%20REVIEW%20GUIDE.md).
+
 ## Documents
 
 - [Universal Viral Video Workflow](UNIVERSAL%20VIRAL%20VIDEO%20WORKFLOW.md) — the complete 12-phase workflow, including the researched viral micro-drama pitch mode, reusable character voice creation, image-batch production and QC, per-clip Flow video approval, Scenebuilder cuts, Flow Agent edits, Extend limitations, continuity checks, and posting package.
 - [System Prompt](system%20prompt.md) — standing assistant behavior and current beginner Google Flow procedures.
+- [Asset Naming and Review Guide](ASSET%20NAMING%20AND%20REVIEW%20GUIDE.md) — mandatory reference/shot/clip labels, versions, review status, cleanup, and download traceability.
 - [Video Editing Prompt](video%20editing%20prompt.md) — copy-ready template for planning and editing a project.
 - [Style Library](STYLE%20LIBRARY.md) — the 243 style options from the supplied master prompt, with catalog codes.
 - [Workflow Diagram](assets/google-flow-viral-workflow.svg) — visual overview.

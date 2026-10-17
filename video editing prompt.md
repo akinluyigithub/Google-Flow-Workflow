@@ -2,6 +2,8 @@
 
 ## Project handoff defaults
 
+- Name every reference, storyboard still, generated clip, and UI screenshot before review. Use `REF 01 — Description`, `SHOT 01 — Story beat`, `CLIP 01 — Story beat — v01`, and `SCREENSHOT 01 — Purpose`. Preserve these identifiers and distinguish versions in actual Flow titles, downloaded filenames, clip/frame maps, edit timelines, and the project asset ledger. Verify titles saved; present a labeled review list so feedback by number identifies the exact asset. Follow [Asset Naming and Review Guide](ASSET%20NAMING%20AND%20REVIEW%20GUIDE.md).
+
 - Create a named local project folder in the active Google-Flow workspace as soon as the story/title is locked. Keep references, prompts, Flow downloads, captions/audio, editable HyperFrames files, and final exports in that project folder.
 - Phase 11 begins once all planned Flow clips are ready and approved: download and verify every clip and the assembled Flow scene, if available, before editing. Preserve the originals.
 - Continue the edit in the same chat and use the available HyperFrames skill when the user is ready. Save editable materials in the project's HyperFrames working-files folder and checked renders in final exports.
