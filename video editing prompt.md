@@ -33,6 +33,16 @@ Create a plan using this table before generation:
 
 Keep each Flow clip to one main action and one coherent camera idea. Split different locations, actions, or camera setups into separate clips. Repeat essential continuity details in every prompt.
 
+For a multi-shot project, first create a **continuity pack**:
+
+- Character identity reference(s): [name, clear reference image(s), wardrobe, voice if needed]
+- Location/environment reference(s): [clean image for each recurring place; omit unintended people]
+- Prop/product reference(s): [important details and orientation]
+- Visual rules: [palette, lens/framing language, lighting, aspect ratio]
+- Storyboard frames: [one full-frame still per planned shot when needed as a video reference]
+
+Review this pack and the storyboard before paying to animate every shot. Text planning and review does not itself use video-generation credits, while generations do. Build the visual references and storyboard as separate assets; a contact sheet may help review, but individual full-size frames are usually easier to use as shot references.
+
 ## Generation prompt template — use once per shot
 
 **Shot [number]: [short label]**
@@ -49,6 +59,8 @@ Keep each Flow clip to one main action and one coherent camera idea. Split diffe
 - Resolution/draft option: [choose based on current quality/cost tradeoff]
 - Credit cost shown: [confirm before submitting]
 - Credit plan: [one draft first / comparison batch / other]
+
+If model quality is uncertain, run one controlled comparison on a representative shot: use the same source frame/reference, prompt, duration, aspect ratio, and output count, changing only the model. Compare identity, action, artifacts, motion, and sound. Do not assume tutorial results predict the current model picker.
 - Audio/silent-video setting: [verify if sound is required]
 
 ## Reference instructions
@@ -105,5 +117,7 @@ Before approving the final sequence, check:
 - The sequence export has the right duration and quality; original generations remain available.
 
 Credit discipline: costs apply per generation and one Agent request can create multiple generations. Check the live cost and remaining balance before submitting. Generate one draft first unless a comparison batch is intentional; unused daily/monthly credits and refresh rules depend on the current account terms.
+
+When a specific real person's appearance matters, use an appropriate reference image with permission and keep it as the identity source; descriptive text alone may produce a different face. Keep environment references separate and free of unintended people when character identity must remain clear.
 
 For captions, precise typography, detailed sound mixing, or frame-accurate finishing beyond current Flow controls, download the sequence and finish it in a dedicated video editor.

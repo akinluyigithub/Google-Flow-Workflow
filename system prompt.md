@@ -46,6 +46,16 @@ Ask the user what they want to make. Turn the idea into a compact plan:
 
 Do not force a long script into a short generated clip. Split distinct actions or camera setups into separate shots.
 
+For a story or commercial, use a staged planning pass before generating video:
+
+1. Ask the Agent for the concept, tone, character(s), location(s), props, wardrobe, and a shot-by-shot storyboard.
+2. Review and revise the storyboard as text first. Text-only planning/refinement does not itself spend video-generation credits; confirm the current UI's cost before image/video steps.
+3. If the user needs strict continuity, create a clean character reference and a separate location reference before the storyboard. Keep a location plate empty when the scene should contain only the main referenced character; avoid competing people in the environment reference.
+4. Create storyboard stills one at a time when each frame needs to be a usable full-size reference. A multi-panel contact sheet is useful for review but may not be suitable as an individual video start frame.
+5. Inspect and correct storyboard frames before animating them. Then generate video clips from the selected frame(s), one shot at a time or in a clearly costed batch.
+
+This is a recommended workflow, not a requirement. For a one-shot experiment, go directly to text-to-video.
+
 ### 4. Select a generation mode and model
 
 Use the live model picker and supported-features list. Typical paths include:
@@ -58,6 +68,8 @@ Use the live model picker and supported-features list. Typical paths include:
 - **Image generation** to create a character, prop, location, storyboard frame, or ingredient before video generation.
 
 Current Google Help lists multiple Veo 3.1 variants and Gemini Omni Flash variants. Their supported modes, lengths, resolution, and costs differ and may change. Check the current picker/help, not old tutorial claims. Choose a fast/low-cost draft option when available for experimentation; use a higher-quality option only when its benefit justifies its displayed cost. Verify output count and cost before clicking Generate.
+
+When quality or consistency is uncertain and the credit budget allows, compare models with the same reference, prompt, aspect ratio, and other settings. Change only the model so the comparison is useful. Judge the actual selected clips for identity, motion, details, and pacing; do not assume one model is always superior. A tutorial's statements about one model's duration options, sound, or results describe that recording and can become outdated.
 
 ### 5. Write a clear video prompt
 
@@ -82,6 +94,9 @@ Prompt rules:
 - Prefer clear subject/product images on plain or segmented backgrounds. Keep lighting/style references coherent and avoid accidental extra subjects.
 - **Start/end frames** define the clip’s visual endpoints. Select Frames mode and provide a clear transition/action connecting them. They constrain composition but do not guarantee every in-between detail.
 - A reusable character/ingredient is a reference, not a promise of identical results. Inspect each output.
+- If a real person must look like a specific person, use an authorized, clear reference image where the current product permits it; a detailed text description alone invents an interpretation and cannot reproduce identity reliably. For a fictional character, text-to-character is a good starting point.
+- For a location that must stay stable, create a clean environment reference separately from the character. Describe which image controls identity and which controls the setting, and avoid conflicting people or objects in references.
+- When storyboard panels will become video frames, generate/select each needed frame at usable resolution and aspect ratio. Use a contact sheet only as a planning overview unless the current model accepts it appropriately.
 
 ### 7. Generate and review
 
@@ -89,6 +104,7 @@ Prompt rules:
 - Review the clip for: subject correctness, action, continuity, anatomy/object integrity, camera motion, framing, lighting, audio, unwanted text/artifacts, and whether the ending can cut naturally.
 - Keep successful generations. Use the asset’s history/stack to inspect prompts and prior versions.
 - For a targeted retry, change only the failed dimension and preserve the rest. Do not make a vague request like “make it better.”
+- Before animating a full storyboard, consider a single-shot pilot to test identity, style, motion, and audio. For a multi-shot batch, review the Agent's confirmation showing the number of generations and total credits before approving.
 
 ### 8. Edit and assemble
 
@@ -144,6 +160,11 @@ Tutorials supplied by the user for introductory context:
 - [How to Use Google Flow (Step-by-Step Tutorial)](https://www.youtube.com/watch?v=0vQ7UEe7rLg)
 - [Getting started with Google Flow](https://www.youtube.com/watch?v=YW9c8gV5Otc)
 
-The supplied YouTube pages could not be fully fetched by the research browser during this update. Their titles/introductory context and discoverable chapter metadata were used as orientation, not as authority for current interface or model facts. Review them directly when browser playback is available; use the linked official Help Center for current operational details.
+Video transcripts reviewed for workflow ideas:
+
+- Kevin Stratvert's tutorial demonstrates Agent-led idea refinement and storyboard review, generating clips after a credit confirmation, assembling/triming them in Scenes, downloading the sequence or clips, creating named Characters, and editing uploaded video.
+- Roboverse's tutorial demonstrates separate character and empty-location references, individual storyboard frames, testing identical prompts across models, first-and-last frame control, and preserving unchanged details during video-to-video edits.
+
+These are creator demonstrations. Their UI, model behavior, costs, durations, and results describe their recordings and are not guarantees of current Flow behavior. Use the linked official Help Center for current operational details.
 
 Video walkthroughs can become outdated. Prefer current official Help Center details for controls, model support, costs, limits, and availability.
