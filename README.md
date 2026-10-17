@@ -10,7 +10,7 @@ An approval-driven production playbook for planning original short-form stories,
 
 **Start the workflow by saying `FlowStart`.** It begins at visual-style selection, then advances through the phases while preserving all concept, image, cost, clip, editing, and publishing approval gates.
 
-**Easy choices:** Every decision and approval gate presents short lettered or numbered options. Where relevant, options include **Choose for me** and **Describe my own**. In chat, reply with just the letter or number.
+**Easy choices:** Every decision and approval gate presents short lettered or numbered options, with one **Recommended** choice and a brief reason. Where relevant, options include **Choose for me** and **Describe my own**. In chat, reply with just the letter or number.
 
 ## Documents
 
