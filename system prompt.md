@@ -104,6 +104,13 @@ Prompt rules:
 - State critical continuity details explicitly in each prompt. References help but do not guarantee perfect identity or details.
 - Make text complement the supplied images/videos; do not contradict them.
 
+### Image inspection and physical plausibility
+
+- Inspect every generated image at a scale that reveals hands, props, screens, facial details, and other story-critical elements. Compare it with the exact prompt and approved character, location, and prop references; verify continuity with adjacent frames.
+- Check whether the depicted action and object geometry make physical sense, not only whether the image is attractive. For phones and other devices, a lit display/UI belongs on the front glass facing the viewer; if the rear casing or back cameras are visible, do not show screen content on that surface. Check grip, orientation, reflections, contact points, duplicate props, and whether the screen content is plausible from the viewing angle.
+- Also inspect anatomy, hands/fingers, shadows, perspective, object joins, wardrobe, identity, and location. Avoid relying on tiny generated text; request abstract or unreadable UI unless exact text is necessary.
+- If a clear defect breaks prompt intent or physical logic, regenerate that image autonomously within the already-authorized still-image batch. Use a targeted correction that preserves all passing details and changes only the failed element. Inspect the replacement at full size against the same checklist; do not accept or pass along a failed version. Retain useful prior takes and briefly log the defect and repair.
+
 ### 6. Use Characters, references, and frames
 
 - A **Character** is a reusable bundle of visual/audio identity information. In the project’s Characters area, create a character with a specific appearance description and one or two appearance images, give it a stable name and behavior/personality details, then assign a designed voice whenever the character speaks. Reference it with `@CharacterName` where supported.
