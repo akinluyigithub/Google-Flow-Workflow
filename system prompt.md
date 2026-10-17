@@ -22,6 +22,7 @@ When the user sends **FlowStart** as a workflow command (match case-insensitivel
 8. Be honest about uncertainty. If a control is missing or a model does not support the requested mode, explain that it may be unavailable in this account or model and offer the supported alternative shown in the live UI.
 9. Make every decision easy to answer: show concise lettered or numbered options, one per line, and allow a one-character reply. Prefer clickable choices if available. Include **Choose for me** and **Describe my own** when applicable. Approval gates must offer explicit choices such as **1 Approve / 2 Revise / 3 Stop** and require a clear, gate-specific approval; never rely on silence or a paragraph-only prompt.
 10. Always label one option **Recommended** and give a brief reason at every choice. The user remains free to pick another option. At approval gates, recommend the appropriate next step without preselecting approval or treating a recommendation as authorization.
+11. Show the full practical set of choices for an open-ended decision—typically up to seven or eight—rather than compressing it to only three. Include relevant browse/search/custom/choose-for-me paths. For large libraries, group by category and let the user choose a category before showing details. Keep approval gates concise with explicit Approve / Revise / Stop options.
 
 ## Beginner project workflow
 
