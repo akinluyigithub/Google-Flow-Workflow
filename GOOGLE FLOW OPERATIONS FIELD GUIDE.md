@@ -81,6 +81,8 @@ Do not rely on a remembered model matrix. Google currently lists different suppo
 
 ## 8. Project organization, sharing, and backup
 
+- **Free upscale default:** use the highest supported download resolution with no added money or credit cost and no plan upgrade. Prefer free 2K image upscaling over 1K-only delivery when offered. Verify live cost evidence and actual file dimensions, inspect fidelity after upscaling, retain useful originals, and record native/upscaled status in the ledger. The user's standing preference authorizes free upscaling without another question; paid options and unclear costs do not count as free. Apply this to supported free video exports too, preserving paid generation approval requirements.
+
 - **Mandatory naming before review:** rename each completed/imported asset using the actual Flow title field and verify it saved. Use `REF 01 — Description`, `SHOT 01 — Story beat`, and `CLIP 01 — Story beat — v01`; captured UI screenshots use `SCREENSHOT 01 — Purpose`. Preserve identifiers in versions, feedback, downloads, and the local asset ledger. See [Asset Naming and Review Guide](ASSET%20NAMING%20AND%20REVIEW%20GUIDE.md). Do not present a batch as ready with unexplained automatic titles. Names identify story order even when Flow sorts tiles by recent activity.
 
 - Project Settings can show generation prompt/type in tiles and switch between Grid and Batch views. Use descriptive project/asset names and nested Collections for characters, locations, selected frames, approved clips, and alternates.

@@ -22,6 +22,10 @@ Use two-digit numbers in story order, assigned in the approved asset plan. Keep 
 5. Keep useful alternates clearly labeled. When the user authorizes cleanup, identify superseded assets by prompt and asset identity, move those exact assets to Flow Trash, and verify the remaining review count. Do not permanently delete them or discard useful originals without the required authorization. Naming itself requires no extra approval.
 6. Preserve identifiers on download: for example `EP01_SHOT_05_warning-at-front-door_v02.png`, retaining the actual source extension. Put them in the existing project folder and update the ledger with real paths. Use the same identifiers in prompts, start/end frame maps, clip approvals, edit timelines, captions notes, and delivery manifests.
 
-## Completion check
+## Resolution and free upscaling
+
+Choose the highest supported resolution with no added money or credit cost and no plan upgrade. In Flow, free 2K image upscaling is the standard when offered; prefer it over a 1K-only delivery. Check live availability and cost evidence rather than treating every upscale as free. No extra user question is needed for a verified free upscale. Preserve useful originals and identify the upscaled file, for example `EP01_SHOT_05_warning-at-front-door_v02_2K.jpg`. Verify decoding, real pixel dimensions, aspect ratio, identity, wardrobe/color, and physical geometry after upscaling; do not infer resolution from the filename or claim native 2K detail. Record actual width/height, source/upscaled status, file path, and any observed cost in the ledger. Use the best confirmed free option if a higher tier is paid, unavailable, or its cost is unclear; do not purchase a plan upgrade. Apply the same preference to free video export upscaling while retaining paid clip approval requirements.
+
+## Final review check
 
 Before saying a batch is ready, verify that no active review asset has an unexplained automatic title, each identifier maps to one intended role and distinguishable version, and the user's feedback can be resolved to an exact asset. If renaming is unavailable, provide a labeled local preview and ledger with exact asset links, disclose the UI limitation, and complete the Flow title when possible. Do not claim a rename or download that has not been verified.

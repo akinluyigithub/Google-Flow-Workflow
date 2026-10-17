@@ -2,6 +2,8 @@
 
 ## Project handoff defaults
 
+- Use the highest available export/upscale resolution with no added money or credit cost and no plan upgrade. Free 2K image upscaling is the default when offered. Verify real dimensions and fidelity, identify upscaled sources in the ledger, and preserve useful originals. Check live cost evidence; keep existing approval requirements for paid video changes.
+
 - Name every reference, storyboard still, generated clip, and UI screenshot before review. Use `REF 01 — Description`, `SHOT 01 — Story beat`, `CLIP 01 — Story beat — v01`, and `SCREENSHOT 01 — Purpose`. Preserve these identifiers and distinguish versions in actual Flow titles, downloaded filenames, clip/frame maps, edit timelines, and the project asset ledger. Verify titles saved; present a labeled review list so feedback by number identifies the exact asset. Follow [Asset Naming and Review Guide](ASSET%20NAMING%20AND%20REVIEW%20GUIDE.md).
 
 - Create a named local project folder in the active Google-Flow workspace as soon as the story/title is locked. Keep references, prompts, Flow downloads, captions/audio, editable HyperFrames files, and final exports in that project folder.

@@ -47,6 +47,8 @@ These current references inform the research method; each new FlowStart must che
 
 ## Default image and video controls
 
+**Resolution preference:** automatically use the highest available resolution that adds no monetary or credit cost and requires no plan upgrade. Free 2K image upscaling is the standard when Flow offers it. Verify actual downloaded dimensions, preserve useful originals, and record that the files are upscaled. Recheck availability/cost in the live UI; paid upgrades retain their approval requirements.
+
 | Work | Default | Approval rule |
 |---|---|---|
 | Image generation | Ask once for ChatGPT Images or Google Flow Images; 9:16 portrait; one image per prompt, all planned prompts batched when supported. Flow image model: Nano Banana 2.1 when available. | Provider choice authorizes the planned image set. QC and retry defects automatically, then present the batch for selection; no per-image generation approvals. |
