@@ -10,6 +10,8 @@ An approval-driven production playbook for planning original short-form stories,
 
 **Start the workflow by saying `FlowStart`.** It begins at visual-style selection, then advances through the phases while preserving all concept, image, cost, clip, editing, and publishing approval gates.
 
+**Easy choices:** Every decision and approval gate presents short lettered or numbered options. Where relevant, options include **Choose for me** and **Describe my own**. In chat, reply with just the letter or number.
+
 ## Documents
 
 - [Universal Viral Video Workflow](UNIVERSAL%20VIRAL%20VIDEO%20WORKFLOW.md) — the complete 12-phase workflow, including image-provider choices, per-clip Flow video approval, Scenebuilder cuts, Flow Agent edits, Extend limitations, continuity checks, and posting package.
