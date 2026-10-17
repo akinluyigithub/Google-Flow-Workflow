@@ -2,6 +2,8 @@
 
 ## Project handoff defaults
 
+- Begin Phase 9 with 16:9 landscape multi-view sheets for every character (full-body front/back, both profiles, three-quarter, head/face close-up and physique/wardrobe details), then location sheets/empty plates and layout, then necessary prop sheets. Inspect those references before deriving final 9:16 standalone character images and saved Flow Characters/voices; generate 9:16 scene/shot images afterward using actual upstream references. Use multiple readable pages when needed. Follow [Phase 9 Reference Foundation Guide](PHASE%209%20REFERENCE%20FOUNDATION%20GUIDE.md).
+
 - Phase 9 must finish saving every speaking character in Flow Characters with its approved image, stable name, appearance/personality info and named saved voice explicitly attached and verified. Preview a sample when supported. Use Omni 1.1 Flash for videos; do not substitute Veo without explicit user direction. Attach the actual Character and saved voice in supported Omni Ingredients inputs for character clips; a typed voice description alone is insufficient.
 
 - Keep Flow-generated stills in Flow for review and video conditioning; do not download them merely for local staging, review sheets, or download-only upscaling. Track asset titles/URLs/IDs instead. Save ChatGPT-generated files locally when accessible before uploading to Flow. Download stills only for requested delivery/backup or a concrete external editing/packaging need. Phase 11 video downloads remain required for external editing. Free upscale preferences apply when an export is actually needed.

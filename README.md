@@ -18,6 +18,8 @@ An approval-driven production playbook for planning original short-form stories,
 
 ## Documents
 
+- [Phase 9 Reference Foundation Guide](PHASE%209%20REFERENCE%20FOUNDATION%20GUIDE.md) — required 16:9 multi-view character, location and prop sheets before 9:16 final character assets, saved Characters/voices, and shot images.
+
 - [Universal Viral Video Workflow](UNIVERSAL%20VIRAL%20VIDEO%20WORKFLOW.md) — the complete 12-phase workflow, including the researched viral micro-drama pitch mode, reusable character voice creation, image-batch production and QC, per-clip Flow video approval, Scenebuilder cuts, Flow Agent edits, Extend limitations, continuity checks, and posting package.
 - [System Prompt](system%20prompt.md) — standing assistant behavior and current beginner Google Flow procedures.
 - [Asset Naming and Review Guide](ASSET%20NAMING%20AND%20REVIEW%20GUIDE.md) — mandatory reference/shot/clip labels, versions, review status, cleanup, and download traceability.
@@ -53,7 +55,7 @@ These current references inform the research method; each new FlowStart must che
 
 | Work | Default | Approval rule |
 |---|---|---|
-| Image generation | Ask once for ChatGPT Images or Google Flow Images; 9:16 portrait; one image per prompt, all planned prompts batched when supported. Flow image model: Nano Banana 2.1 when available. | Provider choice authorizes the planned image set. QC and retry defects automatically, then present the batch for selection; no per-image generation approvals. |
+| Image generation | Ask once for ChatGPT Images or Google Flow Images; 16:9 landscape reference sheets, then 9:16 portrait final characters and shots; one image per prompt, independent prompts batched within each dependency stage. Flow image model: Nano Banana 2.1 when available. | Provider choice authorizes the planned image set. QC and retry defects automatically, then present the batch for selection; no per-image generation approvals. |
 | Video rendering | Google Flow only; one clip at a time; verify supported mode, model, aspect, duration, output count, and current credit cost. | Require explicit approval for each specific clip and settings before Generate. Re-approval is required after a material change. |
 | Basic editing | Flow desktop Scenebuilder: arrange clips, reorder, trim in/out, preview, and download. | Preserve originals. AI-assisted edits/extensions are media generation and need their own cost approval. |
 

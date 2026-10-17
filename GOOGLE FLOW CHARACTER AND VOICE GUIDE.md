@@ -10,13 +10,15 @@ Google Flow lets a project character bundle visual and audio references for reus
 
 ## Create a character in a project
 
+First complete the [Phase 9 reference foundation](PHASE%209%20REFERENCE%20FOUNDATION%20GUIDE.md): 16:9 landscape multi-view character sheets for the cast (full-body front/back, both profiles, three-quarter, head/face close-up and physique/wardrobe details), then location sheets, then necessary prop sheets. Use additional readable pages instead of tiny panels. Only after those references pass QC, derive the final 9:16 standalone character assets from them and create/update the saved Flow Characters below. Add the clear selected single-view image(s) to the Character, rather than treating the whole multi-panel sheet as a video frame. Preserve existing approved faces while filling missing views. Final 9:16 scene/shot images come after saved Character/voice setup.
+
 **Mandatory Phase 9 gate:** complete and verify these saved Character/voice records for every speaking character after its approved reference image exists and before any video is prepared. Add the approved image from the project rather than generating a replacement. The local cast/voice bible alone is insufficient. The user's selected video family is **Omni 1.1 Flash**; do not substitute Veo without explicit direction. In character clips, attach the actual saved Character plus its saved voice where Omni Ingredients requires it, and verify both inputs before the clip approval request.
 
 1. Open the intended Flow project.
 2. In the left navigation, open **Characters**. Select **New Character** if available.
 3. Describe the character in concrete visual terms: age range if relevant, face, hair, build, wardrobe, distinctive features, and visual style. Add stable personality/behavior notes separately in character info.
 4. Upload or generate one or two clear appearance images. Use a clean, unambiguous image that shows the intended identity. At least one image is required before the character can be used.
-5. Generate the character image(s), review them for identity and anatomy, and keep the correct reference.
+5. Reuse the approved standalone image(s) from the completed reference foundation. Generate only if the required standalone view is missing; attach the verified sheets as inputs, review identity/anatomy, and keep the correct reference.
 6. Give the character a stable, recognizable name.
 7. Select a voice if this character speaks. For a speaking story character, our workflow always creates and attaches a suitable voice. Mark a genuinely non-speaking character as voice not applicable.
 8. Add concise character info for personality, behavior, and continuity. Keep this distinct from the visual description and from voice performance notes.
