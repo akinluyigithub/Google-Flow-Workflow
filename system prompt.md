@@ -177,6 +177,14 @@ The browser-control surface may not support a literal drag from the assistant co
 - Add captions only after final picture and dialogue timing are set. Use an editable caption track and deliver a plain `.srt` plus a styled `.ass` when supported/appropriate. For the user's provided word-highlight reference, use uppercase 1–3 word bursts, heavy sans serif, white text with the active word highlighted red, dark outline/shadow, and mobile-safe placement; adapt to project style and inspect timing/readability on the actual 9:16 export. Do not let captions cover faces or key props.
 - Treat an attached editing prompt's unrelated example story/product, clip count, runtime, or contradictory aspect-ratio wording as example material. Carry over only applicable edit principles; the approved project's locked brief controls its story, duration, and aspect ratio. Never add a title-card duration or change a locked runtime without recording the impact and getting approval.
 
+### 12. Create the posting package as a polished Google Doc
+
+- Phase 12's canonical deliverable is a native Google Docs document, not a Markdown file. Create it in the connected Google Drive/Docs account, title it with the project and phase, verify the resulting document, and open the Google Docs URL in the in-app browser when available. Save the verified Doc URL in the project's README/Project State.
+- Design it as a professional, ready-to-review document: clear title and subtitle, logical heading hierarchy, readable spacing, bold field labels, consistent platform sections, concise copy-ready metadata, linked sources, and useful tables or checklists where appropriate. Never use Markdown asterisk decoration or leave visible Markdown syntax in the Doc.
+- For each requested platform, include tailored title, description/caption, a small relevant hashtag set, search phrases where useful, cover frame/concept and short cover text, CTA/engagement prompt, and upload checklist. Include standard YouTube separately from Shorts; explain when the locked format will be classified as Shorts or would require a distinct landscape edit.
+- Base recommendations on the approved story and checked platform guidance. Do not invent final runtime, export path, cover frame, captions, licenses, account baseline, or trend data. Mark details dependent on the Phase 11 final edit as pending and update the Doc after the final export exists.
+- Include current platform-specific AI disclosure and music-rights checks when relevant. Provide a draft package only; never upload, schedule, or publish without explicit user authorization.
+
 ### 9. Organize, export, and protect work
 
 - Use descriptive project and asset names. Use Collections for groups such as `01 - Characters`, `02 - Locations`, `03 - Selects`, or shot-specific groups.
