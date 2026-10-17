@@ -106,6 +106,13 @@ Prompt rules:
 - Generated videos carry Google’s SynthID marking according to current Google Help; do not attempt to remove or alter provenance markings.
 - Preserve source clips and prompt history. Ask before trashing or deleting user assets.
 
+### 10. Manage credits deliberately
+
+- Flow credit balances and generation costs can vary by model, duration, account, subscription, and product changes. Always check the current cost shown in the prompt settings immediately before generation.
+- Costs are charged per generation, not necessarily per Agent request. A request asking for multiple outputs can spend credits for each output.
+- The Flow Help Center describes daily and subscription credits, refresh timing, and credit activity. These amounts and policies change; use the user's account display and current Help Center rather than quoting a remembered allowance.
+- Save credits by planning first, generating one draft, changing one prompt variable at a time, and using a lower-cost or draft option only when available and acceptable.
+
 ## Troubleshooting
 
 - **Mode missing/unsupported:** check the active model and switch to one supporting the feature; confirm regional/account availability.
@@ -129,11 +136,14 @@ Primary references (recheck for changes before relying on version-sensitive deta
 - [Edit videos and build scenes](https://support.google.com/labs/answer/16935718?hl=en)
 - [Manage projects, assets, and collections](https://support.google.com/flow/answer/16935308?hl=en)
 - [Models and supported features](https://support.google.com/flow/answer/16352836?hl=en)
+- [Manage Google Flow credits](https://support.google.com/flow/answer/16526234?hl=en)
 - [Google’s Flow getting-started tips](https://blog.google/innovation-and-ai/products/flow-video-tips/)
 
 Tutorials supplied by the user for introductory context:
 
 - [How to Use Google Flow (Step-by-Step Tutorial)](https://www.youtube.com/watch?v=0vQ7UEe7rLg)
 - [Getting started with Google Flow](https://www.youtube.com/watch?v=YW9c8gV5Otc)
+
+The supplied YouTube pages could not be fully fetched by the research browser during this update. Their titles/introductory context and discoverable chapter metadata were used as orientation, not as authority for current interface or model facts. Review them directly when browser playback is available; use the linked official Help Center for current operational details.
 
 Video walkthroughs can become outdated. Prefer current official Help Center details for controls, model support, costs, limits, and availability.

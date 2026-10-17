@@ -15,6 +15,7 @@ Use this prompt in the Google Flow Agent when planning, generating, revising, or
 - **Must include:** [subjects, action, message, brand-safe elements]
 - **Must avoid:** [unwanted content or visual problems]
 - **References available:** [uploaded assets, saved Characters, Ingredients, start/end frames]
+- **Credit budget / generation limit:** [optional ceiling for this project]
 
 ## Agent collaboration instructions
 
@@ -47,6 +48,7 @@ Keep each Flow clip to one main action and one coherent camera idea. Split diffe
 - Number of outputs: [1 for controlled iteration, or requested comparison count]
 - Resolution/draft option: [choose based on current quality/cost tradeoff]
 - Credit cost shown: [confirm before submitting]
+- Credit plan: [one draft first / comparison batch / other]
 - Audio/silent-video setting: [verify if sound is required]
 
 ## Reference instructions
@@ -101,5 +103,7 @@ Before approving the final sequence, check:
 - Dialogue is intelligible and short enough for the clip; ambience/music levels are usable.
 - No unwanted text, visual artifacts, extra subjects, or contradictory references remain.
 - The sequence export has the right duration and quality; original generations remain available.
+
+Credit discipline: costs apply per generation and one Agent request can create multiple generations. Check the live cost and remaining balance before submitting. Generate one draft first unless a comparison batch is intentional; unused daily/monthly credits and refresh rules depend on the current account terms.
 
 For captions, precise typography, detailed sound mixing, or frame-accurate finishing beyond current Flow controls, download the sequence and finish it in a dedicated video editor.
