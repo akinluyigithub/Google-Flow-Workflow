@@ -8,7 +8,7 @@ This is the operating playbook for creating short-form stories and videos with G
 
 The user can start this complete workflow in any chat by saying **FlowStart** (case-insensitive). This is a direct command to begin, not a request to explain or acknowledge the trigger. Load the installed Google Flow workflow skill when available, then read this canonical workflow and `system prompt.md` from the active Google-Flow workspace. Resume from saved Project State when present; otherwise begin at Gate 1, using information already in the conversation and not re-asking answered questions. If repository documents are unavailable, use the skill's embedded startup rules and continue. Start recommendations only after current, relevant trend research (see **Research before recommendations** below). Always include **viral micro-drama series** as a story-format choice. FlowStart authorizes planning only; it does not bypass concept approval, image-provider choice, individual video prompt/model/settings/cost approval, editing choices, or publishing authorization. Selecting an image provider authorizes all planned still images in the approved production package; generate and QC them without per-prompt or per-image approval.
 
-**First action for a fresh FlowStart:** Do not send a user-facing question, status, or options before the first in-app browser tool call. Use the ChatGPT/Codex built-in in-app browser to navigate to the Google Flow main page `https://flow.google.com/`, even if an older project is currently open. If using a fresh CUA tool session, make its required first API call `await cua.getState()` and follow the returned instructions. If signed out, pause for sign-in in this same browser. Then click **+ New project**, wait, and verify the new project is open. Keep the in-app browser tab open and on the active project through all phases and pauses; close it only after the project is complete or the user asks. Only after that may workspace lookup, research, planning, questions, or menus begin. Do not resume an old project unless the user explicitly asks to continue/resume it. Never launch, foreground, or switch to the user's external browser. If in-app browser control is unavailable, explain that this first action could not be completed; do not substitute the first workflow question or use an external browser.
+**First action for a fresh FlowStart:** Do not send a user-facing question, status, or options before the first in-app browser tool call. Use the ChatGPT/Codex built-in in-app browser to navigate to the Google Flow main page `https://flow.google.com/`, even if an older project is currently open. If using a fresh CUA tool session, make its required first API call `await cua.getState()` and follow the returned instructions. If signed out, pause for sign-in in this same browser. Then click **+ New project**, wait, and verify the new project is open. Keep the in-app browser visible on the same active project tab across every turn, phase, and user-input pause. Never invoke close-tab/close-window, hide/replace the browser, or navigate away mid-project. Leave Flow visible before ending each in-progress turn. Close it only after completion or explicit user request; if its tab is lost, reopen Flow in-app and return to the active project. Only after that may workspace lookup, research, planning, questions, or menus begin. Do not resume an old project unless the user explicitly asks to continue/resume it. Never launch, foreground, or switch to the user's external browser. If in-app browser control is unavailable, explain that this first action could not be completed; do not substitute the first workflow question or use an external browser.
 
 ### Keep FlowStart interactive and brief
 
@@ -38,7 +38,7 @@ Research cultural/regional story traditions separately using credible culture-sp
 - Use **Guided Mode** by default. Do not ask the user to choose a mode. Bundle related creative fields into a small number of decisions, following the five-gate target and seven-gate ceiling above. For each gate, state a concise recommendation and research basis where relevant, then provide keyboard-friendly choices. Do not require the user to copy prompts or compose prose to proceed.
 - At every meaningful decision or gate, include **Choose for me** and **Describe my own** where applicable. Keep these as concise options, such as `Y — Choose for me` and `Z — Describe my own`. For approval gates, always provide explicit, easy choices such as `1 — APPROVE`, `2 — REVISE`, `3 — STOP`; never rely on a free-text approval phrase alone. Approval must be explicit and gate-specific.
 - Always mark one available choice **Recommended** and give a short reason. The user may choose any other option. At approval gates, recommend the safe/next-step choice only when appropriate; never preselect approval or imply that the user has approved.
-- Do not arbitrarily reduce a phase's meaningful menu to three choices. Show the full practical menu when it has up to seven or eight options, including browse/search/custom/choose-for-me routes where relevant. Group large catalogs by category and ask the user to pick a category before presenting a long list. Reserve a short three-choice menu for binary approval/revision/stop gates, not for open-ended creative selection.
+- Do not reduce open-ended creative menus to three choices. Offer at least 10 practical, distinct options when the brief or catalog supports them, and fit each to the user's request. In the visual-style menu, explicitly include **Browse all 243 styles by category** and **Search all 243 styles** in the first menu, alongside a recommended direction, relevant featured/category styles, viral micro-drama, Choose for me, and Describe my own. Group the full catalog by category or search rather than dumping all 243 at once. Reserve compact approve/revise/stop menus for approval gates.
 - Prefer actual clickable choice controls when the interface supports them. In plain chat, use clear keyboard-friendly labels: one option per line, letter or number first, short action label next. Explain that the user can reply with only the letter/number. Avoid burying choices in paragraphs.
 - Keep the phases in order. Stop at each explicit gate; silence, a prior approval for a different asset, or an instruction to prepare a package is not approval for the next paid generation.
 - **Images:** ask once for **ChatGPT Images** or **Google Flow Images**. That provider choice authorizes all planned still-image prompts in the approved production package; do not ask for another batch-size, per-prompt, or per-image approval. Default 9:16 portrait and one output per distinct prompt; submit the planned prompt set together when supported. Use Nano Banana 2.1 when available for Flow. Inspect outputs and autonomously retry clear defects within the planned set, then present the completed set for one selection/lock decision. Report costs transparently without making image generation approval-gated. Do not expand beyond the planned package unless asked.
@@ -60,19 +60,26 @@ Immediately after the user agrees to the story and working title, create a match
 
 ## Phase 1 — Research, then choose creative direction
 
-Perform relevant platform trend research before the first recommendation. Bundle visual style and story format in one choice when feasible; include the full practical menu, viral micro-drama, a marked recommendation, and choose-for-me/own-idea paths. Carry forward any style or format the user already specified.
+Perform relevant platform trend research before the first researched recommendation. Bundle visual style and story format in one choice when feasible; make the menu vivid and specific to the user's brief and include at least 10 practical options when available. Always visibly include **viral micro-drama series**, **Browse all 243 styles by category**, and **Search all 243 styles**, plus a marked recommendation, relevant style/format directions, **Choose for me**, and **Describe my own**. Carry forward any style or format the user already specified. Never let a generic shortlist hide the full style-library routes.
 
 If the user wants to browse visual styles, use this reference menu; do not make selecting from the catalog a separate required turn when style and format can be decided together.
 
-Give one clear recommendation and invite a choice:
+Give one clear researched recommendation and invite a choice using a substantial menu. Include at least these practical routes (add or tailor options to the user's brief so there are 10 or more):
 
-1. **Recommended:** accept the recommended style
-2. See three alternatives with a short example concept for each
-3. Browse the Featured 10 styles
-4. Browse the full style library by category
-5. Search for a style, mood, or topic
-6. Describe a custom look
-7. Choose for me
+1. **Recommended:** accept the researched style-and-format direction, with one vivid example and short rationale
+2. Browse all 243 visual styles by category
+3. Search all 243 styles by code, name, mood, or keyword
+4. Browse the Featured 10 styles
+5. Explore live-action and cinematic realism
+6. Explore animation, illustration, and hand-crafted looks
+7. Explore UGC, selfie, and social-native looks
+8. Explore surreal, meme, and talking-object looks
+9. Explore fantasy, sci-fi, mystery, or horror looks
+10. Choose **viral micro-drama series** (then immediately show the regional/drama-type menu in Phase 2)
+11. **Choose for me**
+12. **Describe my own** look or format
+
+For “Browse by category,” follow with the full set of category headings and code ranges in `STYLE LIBRARY.md`, plus search/choose-for-me/custom routes. Preserve L/F catalog codes in examples and recommendations. Do not make the 243-style catalog invisible behind a generic two- or three-option menu.
 
 Featured codes: F1 3D Claymation; F2 Ghibli-inspired hand-painted 2D; F3 Cinematic; F4 Selfie UGC; F5 Italian Brainrot surreal; F6 Pixar-inspired family 3D; F7 AI Talking Objects; F8 Music Video; F9 Cyberpunk; F10 Documentary. The complete 243-entry catalog is in [STYLE LIBRARY.md](STYLE%20LIBRARY.md). Preserve F/L catalog codes. Offer useful category subsets instead of dumping all entries.
 
