@@ -2,6 +2,8 @@
 
 ## Project handoff defaults
 
+- Phase 9 must finish saving every speaking character in Flow Characters with its approved image, stable name, appearance/personality info and named saved voice explicitly attached and verified. Preview a sample when supported. Use Omni 1.1 Flash for videos; do not substitute Veo without explicit user direction. Attach the actual Character and saved voice in supported Omni Ingredients inputs for character clips; a typed voice description alone is insufficient.
+
 - Keep Flow-generated stills in Flow for review and video conditioning; do not download them merely for local staging, review sheets, or download-only upscaling. Track asset titles/URLs/IDs instead. Save ChatGPT-generated files locally when accessible before uploading to Flow. Download stills only for requested delivery/backup or a concrete external editing/packaging need. Phase 11 video downloads remain required for external editing. Free upscale preferences apply when an export is actually needed.
 
 - When an export is needed, use the highest available export/upscale resolution with no added money or credit cost and no plan upgrade. Free 2K image upscaling is the default when offered. Verify real dimensions and fidelity, identify upscaled sources in the ledger, and preserve useful originals. Check live cost evidence; keep existing approval requirements for paid video changes.

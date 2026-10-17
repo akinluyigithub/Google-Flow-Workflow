@@ -10,6 +10,8 @@ Google Flow lets a project character bundle visual and audio references for reus
 
 ## Create a character in a project
 
+**Mandatory Phase 9 gate:** complete and verify these saved Character/voice records for every speaking character after its approved reference image exists and before any video is prepared. Add the approved image from the project rather than generating a replacement. The local cast/voice bible alone is insufficient. The user's selected video family is **Omni 1.1 Flash**; do not substitute Veo without explicit direction. In character clips, attach the actual saved Character plus its saved voice where Omni Ingredients requires it, and verify both inputs before the clip approval request.
+
 1. Open the intended Flow project.
 2. In the left navigation, open **Characters**. Select **New Character** if available.
 3. Describe the character in concrete visual terms: age range if relevant, face, hair, build, wardrobe, distinctive features, and visual style. Add stable personality/behavior notes separately in character info.
