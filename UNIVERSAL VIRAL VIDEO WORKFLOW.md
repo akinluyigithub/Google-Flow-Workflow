@@ -209,7 +209,13 @@ Before prompting, inspect the current model picker and official supported-featur
 
 Generate only after the explicit approval above. Inspect the complete clip, opening and actual ending frames, action, identity, dialogue/lip-sync, audio, artifacts, duration, and endpoint match. Ask **APPROVE / REGENERATE / REQUEST CHANGES** and stop. On approval, lock the clip/version and record actual file, model, duration, inputs, output status, and extracted endpoint. Never propagate a flawed endpoint. If the clip changes, identify downstream clips needing continuity review. A video generation retry requires another explicit generation approval.
 
-## Google Flow video editing and cuts (desktop workflow)
+## Phase 11 — Video downloads, editing, and finishing
+
+Phase 11 begins only after Phase 10's planned video clips have been generated, inspected, and approved. First download **all approved video clips** from Flow into the active project's `03 - Google Flow Downloads` folder (plus the approved Scenebuilder sequence if one exists); verify every file and record its filename. Then continue in this same project chat and begin the edit. Do not begin the HyperFrames edit while approved source clips are still missing from the workspace. Use the available HyperFrames skill/plugin for the edit, with editable materials in `05 - HyperFrames Working Files` and verified final renders in `06 - Final Exports`.
+
+Flow Scenebuilder's basic assembly can be part of Phase 11. Use HyperFrames for finishing beyond Flow's current sequencing/trimming controls, such as timed captions, precise audio, titles, grading, or frame-accurate work. Preserve all source clips. Any new Flow AI edit, extension, or video generation during Phase 11 remains chargeable generation work and requires its own explicit approval under Phase 10. Preparing or rendering an edit does not authorize publishing.
+
+### A. Assemble the Flow rough cut
 
 Use Flow's editor for shot selection, simple sequence assembly, trims, and supported AI-assisted clip changes. Work from copies/versions; Flow's History/asset stack preserves original and edited versions. Confirm every AI edit that triggers generation under the same per-action approval gate above.
 
@@ -248,11 +254,11 @@ Use Flow's editor for shot selection, simple sequence assembly, trims, and suppo
 
 Official current reference: [Edit videos and build scenes in Google Flow](https://support.google.com/flow/answer/16935718?hl=en). Recheck changing feature limits and model support each project.
 
-## Phase 11 — Editing handoff (when additional finishing is needed)
+### E. HyperFrames editing handoff and delivery
 
-Prepare a project-specific, copy-ready handoff using actual approved files and trim decisions. Continue in the same chat and invoke the available HyperFrames skill for editing; do not start a new chat for the same production or imply the skill has run before it has. Put editable composition/project files under the project's HyperFrames working-files folder and verified renders under final exports. Include locked story/style, platform/aspect/runtime, clip order, chosen takes, verified source in/out points, dialogue and captions, music/SFX sources, continuity issues, export settings, QA checks, and actual filenames. Mark missing paths/timing as pending, never invent them. Preserve approved story, voices and timing unless a revision is approved. Caption typography/timing is applied in the edit, not generated into images. Add and time captions after the cut/dialogue is locked, inspect mobile-safe placement, and provide `.srt` plus styled `.ass` where supported. Treat supplied prompts as references: use applicable editing guidance, not unrelated example content or conflicting sample runtimes/aspect labels. Only claim files actually rendered and inspected.
+Prepare the edit from the verified files already downloaded to the project folder. Continue in the same chat and invoke the available HyperFrames skill/plugin; do not start a new chat for the same production or imply the skill has run before it has. Put editable composition/project files under `05 - HyperFrames Working Files` and verified renders under `06 - Final Exports`. Include locked story/style, platform/aspect/runtime, clip order, chosen takes, verified source in/out points, dialogue and captions, music/SFX sources, continuity issues, export settings, QA checks, and actual filenames. Mark missing paths/timing as pending, never invent them. Preserve approved story, voices and timing unless a revision is approved. Caption typography/timing is applied in the edit, not generated into images. Add and time captions after the cut/dialogue is locked, inspect mobile-safe placement, and provide `.srt` plus styled `.ass` where supported. Treat supplied prompts as references: use applicable editing guidance, not unrelated example content or conflicting sample runtimes/aspect labels. Only claim files actually rendered and inspected.
 
-After clip completion, ask whether the user wants an editing package/handoff. Phase 11 preparation does not authorize paid Flow generation or publishing.
+Do not add another planning gate between approved Flow downloads and editing. When the user directs the workflow to continue and all approved clips are downloaded and verified, start Phase 11. Phase 11 preparation/rendering does not authorize new paid Flow generations or publishing.
 
 ## Phase 12 — Posting package and performance review
 

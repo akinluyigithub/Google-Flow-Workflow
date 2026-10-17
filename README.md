@@ -68,7 +68,7 @@ Google's current Help Center documents the desktop editor and Scenebuilder here:
 
 ## Local production folders and editing handoff
 
-Once the story and working title are agreed, create the named project folder under the active Google-Flow workspace immediately. Keep the project's references, story and prompts, Flow downloads, captions/audio, editable HyperFrames working files, and final exports together there. Download and verify approved Flow clips and the assembled scene before post-production; preserve the originals. Continue the edit in the same chat and reuse the same project folder if resuming elsewhere. Keep private project media local by default; publish reusable workflow documentation separately. Use HyperFrames for timed captions, detailed sound, titles, and final finishing beyond Scenebuilder's documented sequencing/trimming controls.
+Once the story and working title are agreed, create the named project folder under the active Google-Flow workspace immediately. Keep the project's references, story and prompts, Flow downloads, captions/audio, editable HyperFrames working files, and final exports together there. **Phase 11 starts after all approved Flow videos are ready:** download and verify every video, plus the approved Flow scene if available, before editing. Then continue in the same project chat and use the HyperFrames skill/plugin; preserve the originals and keep editable files and final renders in their separate folders. Keep private project media local by default; publish reusable workflow documentation separately. Use HyperFrames for timed captions, detailed sound, titles, and final finishing beyond Scenebuilder's documented sequencing/trimming controls.
 
 ## Approval checkpoints
 

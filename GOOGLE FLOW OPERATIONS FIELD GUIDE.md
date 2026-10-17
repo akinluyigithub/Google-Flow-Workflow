@@ -67,6 +67,7 @@ Do not rely on a remembered model matrix. Google currently lists different suppo
 
 - When the story and working title are approved, create a named project folder in the active Google-Flow workspace immediately. Keep story notes/prompts, references, approved Flow downloads, captions/audio, editor working files, and final exports together in subfolders; record the path in Project State.
 - Download each approved source clip and the ready Scenebuilder scene into that project's Flow-downloads folder. Check that each file opens and matches the expected clip/sequence before editing further. Preserve originals.
+- Treat this as the Phase 11 entry gate: once all approved video clips are ready, download and verify them together, then begin editing in the same project chat. Start HyperFrames only after those source files are present; no extra planning interview is needed.
 - Resume the same production in its existing chat; when a new chat is needed, reuse the same workspace and local project folder rather than creating a duplicate.
 - Keep project media local by default. The public workflow repository should contain reusable guidance, not private references or generated production assets, unless the user explicitly asks to publish those assets.
 

@@ -3,7 +3,7 @@
 ## Project handoff defaults
 
 - Create a named local project folder in the active Google-Flow workspace as soon as the story/title is locked. Keep references, prompts, Flow downloads, captions/audio, editable HyperFrames files, and final exports in that project folder.
-- Download and verify approved source clips and the assembled Flow scene before editing. Preserve the originals.
+- Phase 11 begins once all planned Flow clips are ready and approved: download and verify every clip and the assembled Flow scene, if available, before editing. Preserve the originals.
 - Continue the edit in the same chat and use the available HyperFrames skill when the user is ready. Save editable materials in the project's HyperFrames working-files folder and checked renders in final exports.
 - Flow Scenebuilder handles basic sequencing, reordering, trimming, preview, and download. Create timed captions, detailed audio mixes, titles, and frame-accurate finishing in post-production unless the current Flow UI explicitly exposes the needed control.
 - Time captions against the final dialogue edit. For a word-highlight style when suitable: uppercase 1–3 word bursts, heavy sans serif, white base with active word in red, dark outline/shadow, mobile-safe placement; deliver `.srt` and styled `.ass` when supported. Keep captions clear of faces and essential props.
