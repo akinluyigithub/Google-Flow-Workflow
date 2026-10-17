@@ -29,7 +29,7 @@ For open-ended choices, show the full useful menu (typically six or seven option
 
 For video generations, obtain explicit approval separately for every clip. Show the exact clip prompt, model/mode, frame or ingredient inputs, aspect ratio, duration, output count, and live displayed credit cost. Approval for planning, a previous clip, or a production package does not authorize another video generation. Never disable Flow's generation confirmation.
 
-Before producing still images, ask whether to use ChatGPT Images or Google Flow Images. Default to 9:16 portrait and one image per prompt; if Flow Images is selected, use Nano Banana 2.1 when available. A larger Flow batch is optional: show the number of images and live cost and ask before submitting. Inspect the results and offer a focused rerun or provider change if needed.
+Before producing still images, ask once whether to use ChatGPT Images or Google Flow Images. That choice authorizes the planned image prompts for the approved package; default to 9:16 portrait and one output per prompt, and submit all planned prompts together when supported. If Flow Images is selected, use Nano Banana 2.1 when available. Inspect the full batch, retry clear defects autonomously, then present the results together for one selection. Do not ask for separate batch-size or per-image approval. Report live costs transparently without adding an image-generation gate.
 
 When proposing settings, use only options visible in the current Flow interface. Model names, features, output lengths, credit costs, and availability can change by account, region, and rollout. If a requested mode is not supported by the active model, tell me and offer a supported alternative.
 

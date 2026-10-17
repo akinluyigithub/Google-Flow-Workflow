@@ -6,7 +6,7 @@ An approval-driven production playbook for planning original short-form stories,
 
 ![Google Flow viral video workflow diagram](assets/google-flow-viral-workflow.svg)
 
-**Core rule:** still-image production begins with one provider choice—ChatGPT Images or Google Flow Images. After the user authorizes the planned image batch, generate all planned images, inspect them, and retry clear defects without per-image approvals; ask once for selection after the batch. Videos render in Google Flow, and each video clip requires explicit approval of its prompt, settings, and displayed credit cost before generation.
+**Core rule:** still-image production begins with one provider choice—ChatGPT Images or Google Flow Images. That choice authorizes the planned image set in the approved production package. Generate and inspect the set, retry clear defects without per-image approvals, then show all results together for selection. Videos render in Google Flow, and each video clip requires explicit approval of its prompt, settings, and displayed credit cost before generation.
 
 **Start the workflow by saying `FlowStart`.** It begins at visual-style selection, then advances through the phases while preserving all concept, image, cost, clip, editing, and publishing approval gates.
 
@@ -14,17 +14,19 @@ An approval-driven production playbook for planning original short-form stories,
 
 ## Documents
 
-- [Universal Viral Video Workflow](UNIVERSAL%20VIRAL%20VIDEO%20WORKFLOW.md) — the complete 12-phase workflow, including reusable character voice creation, image-batch production and QC, per-clip Flow video approval, Scenebuilder cuts, Flow Agent edits, Extend limitations, continuity checks, and posting package.
+- [Universal Viral Video Workflow](UNIVERSAL%20VIRAL%20VIDEO%20WORKFLOW.md) — the complete 12-phase workflow, including the researched viral micro-drama pitch mode, reusable character voice creation, image-batch production and QC, per-clip Flow video approval, Scenebuilder cuts, Flow Agent edits, Extend limitations, continuity checks, and posting package.
 - [System Prompt](system%20prompt.md) — standing assistant behavior and current beginner Google Flow procedures.
 - [Video Editing Prompt](video%20editing%20prompt.md) — copy-ready template for planning and editing a project.
 - [Style Library](STYLE%20LIBRARY.md) — the 243 style options from the supplied master prompt, with catalog codes.
 - [Workflow Diagram](assets/google-flow-viral-workflow.svg) — visual overview.
+- [Google Flow Operations Field Guide](GOOGLE%20FLOW%20OPERATIONS%20FIELD%20GUIDE.md) — current official-documentation-derived guidance for models, modes, settings, credits, privacy, edits, and asset management.
+- [Google Flow Character and Voice Guide](GOOGLE%20FLOW%20CHARACTER%20AND%20VOICE%20GUIDE.md) — character creation, voice customization, attachment, and supported voice-reference workflow.
 
 ## Default image and video controls
 
 | Work | Default | Approval rule |
 |---|---|---|
-| Image generation | Ask ChatGPT Images or Google Flow Images; 9:16 portrait; one image per prompt. Flow image model: Nano Banana 2.1. | Ask the provider choice before image work. Review results and offer rerun/provider switch if needed. Large Flow batches are optional and require the user's choice after showing count/cost. |
+| Image generation | Ask once for ChatGPT Images or Google Flow Images; 9:16 portrait; one image per prompt, all planned prompts batched when supported. Flow image model: Nano Banana 2.1 when available. | Provider choice authorizes the planned image set. QC and retry defects automatically, then present the batch for selection; no per-image generation approvals. |
 | Video rendering | Google Flow only; one clip at a time; verify supported mode, model, aspect, duration, output count, and current credit cost. | Require explicit approval for each specific clip and settings before Generate. Re-approval is required after a material change. |
 | Basic editing | Flow desktop Scenebuilder: arrange clips, reorder, trim in/out, preview, and download. | Preserve originals. AI-assisted edits/extensions are media generation and need their own cost approval. |
 
@@ -38,6 +40,10 @@ These defaults reflect the user's requested workflow, not a promise that every f
 ## Character voice workflow
 
 Every speaking character receives a planned and saved Flow voice as part of character creation. The workflow defines a stable voice lock (language/accent, register, texture, pace, articulation, baseline delivery, and emotional range), then in Flow selects and customizes a preset, names the voice, enters representative sample dialogue, previews the performance, saves the custom voice, attaches it to the correct Character, and verifies the Character sheet. If the preview is unsuitable, revise and preview again. Keep stable voice identity separate from scene-specific delivery, and never claim an audio preview was heard when it was not accessible. See [system prompt.md](system%20prompt.md) and [UNIVERSAL VIRAL VIDEO WORKFLOW.md](UNIVERSAL%20VIRAL%20VIDEO%20WORKFLOW.md).
+
+For Google's documented character controls, custom voice creation steps, and voice-reference restrictions by model/mode, see the dedicated [Google Flow Character and Voice Guide](GOOGLE%20FLOW%20CHARACTER%20AND%20VOICE%20GUIDE.md). In particular, current Google Help documents voice references for Omni Flash video using Ingredients and a single-speaker voice reference; verify the live model picker because product availability can change.
+
+The broader [Google Flow Operations Field Guide](GOOGLE%20FLOW%20OPERATIONS%20FIELD%20GUIDE.md) collects current practices for Agent behavior, settings layers, model/mode compatibility, credits, image batches and edits, video editing and Scenebuilder, asset history, privacy, exports, troubleshooting, and useful shortcuts. It is version-sensitive and links to Google's Help Center for rechecking.
 3. Use Agent/video editing for a focused change to a selected clip. Say what must stay fixed and change one main thing at a time. Compare versions in History/asset stack; keep the original.
 4. Extend a clip only when the selected model supports it. Confirm the exact model, limitation, duration, and cost before approval.
 5. Download the scene and verify the file. Use a dedicated editor for detailed audio mixing, captions, titles, grading, or frame-accurate finishing beyond Flow's current controls.
