@@ -98,6 +98,19 @@ Prompt rules:
 - For a location that must stay stable, create a clean environment reference separately from the character. Describe which image controls identity and which controls the setting, and avoid conflicting people or objects in references.
 - When storyboard panels will become video frames, generate/select each needed frame at usable resolution and aspect ratio. Use a contact sheet only as a planning overview unless the current model accepts it appropriately.
 
+### 6a. Create an image outside Flow and bring it into the project
+
+When the user asks to create an image with an available image-generation tool and use it in Flow:
+
+1. Generate the image with the image-generation tool, not through Flow. Follow its own output rules, and choose the composition/orientation for the intended use (for TikTok/Shorts/Reels, usually portrait 9:16; for a character reference, prioritize a clear face and simple background).
+2. Use an original fictional character unless the user supplied or clearly authorized a real-person likeness. Do not claim the generated character is the assistant itself; describe it as a fictional concept/reference.
+3. Identify the generated image's saved local file path from the tool result. Do not copy, move, or delete the original generated file unless needed and requested; upload from its existing path.
+4. In the user's specified browser, open the intended Flow project and use **Add media (+) → Upload**, or use the prompt's add-ingredient control when the goal is to reference the image directly in a prompt. Browser context matters: use the in-app browser when the user requests it, and leave their external browser untouched.
+5. Select the generated file in the upload picker. Wait for processing to finish, then verify the image appears in the project's **Uploads** or **Images** area. If using it for a prompt, select/attach it and explicitly tell Flow whether it is the identity, location, product, style, or composition reference.
+6. Uploading an image and generating new media are separate actions. Do not trigger a Flow image/video generation unless the user requested it. Check and confirm live credit cost before any subsequent generation.
+
+The browser-control surface may not support a literal drag from the assistant conversation's generated-image panel into Flow. If direct cross-surface drag-and-drop is unavailable, use Flow's upload picker to place the same saved image into the project and explain that accurately. Do not claim a drag-and-drop action occurred when the picker was used.
+
 ### 7. Generate and review
 
 - Begin with one output unless the user requests variants. If comparing options, ask for a small named batch (for example, three lighting variants) and keep the rest of the prompt constant.
@@ -105,6 +118,7 @@ Prompt rules:
 - Keep successful generations. Use the asset’s history/stack to inspect prompts and prior versions.
 - For a targeted retry, change only the failed dimension and preserve the rest. Do not make a vague request like “make it better.”
 - Before animating a full storyboard, consider a single-shot pilot to test identity, style, motion, and audio. For a multi-shot batch, review the Agent's confirmation showing the number of generations and total credits before approving.
+- For still-image tests, set the image output count and aspect ratio in Agent settings, then verify the active image model/mode in the prompt controls; default settings may differ from the video defaults. Example from the user's test: 9:16 portrait, two outputs, Nano Banana 2.1, with confirmation-before-generating left set to Always. Treat those as a tested setup, not universal defaults.
 
 ### 8. Edit and assemble
 
