@@ -76,7 +76,51 @@ Review this pack and the storyboard before paying to animate every shot. Text pl
 
 **Shot [number]: [short label]**
 
-> [Subject/Character reference] [does one clear, observable action] in [specific setting and time]. [Shot size, angle, and subject placement]. Camera [one specific movement or static instruction]. [Lighting direction/quality and color palette]. [Visual medium/style and texture]. The motion unfolds [simple beginning-to-end timing that fits the selected duration]. Preserve [identity, wardrobe, prop, environment, and style details]. Audio: [exact short dialogue with speaker and delivery, or ambience/SFX/music/silence]. Avoid [only important exclusions].
+Use this detailed template for every shot prompt. Fill the sections in plain language and remove only sections that truly do not apply. The default is a full, paste-ready prompt for an audio-capable video application, with second-by-second action and timed sound direction.
+
+**Project:** [project title]<br>
+**Clip:** [clip ID — short beat/title]<br>
+**Duration:** [exact runtime]<br>
+**Format:** [orientation/aspect ratio and delivery framing]<br>
+**Style:** [visual treatment and tone]<br>
+**Source:** [exact source asset; literal first frame or reference only]
+
+Always begin with these six fields in this exact order. Do not insert a title, purpose paragraph, settings summary, or other text above them. Continue immediately with the scene prompt and detailed timed action.
+
+**Core intent and reference map**
+- Emotional/story beat: [..]
+- [Character reference]: [identity, face, hair, build, wardrobe, voice, and role]
+- [Location reference]: [geography, background, palette, lighting, details to preserve]
+- [Prop reference]: [design, orientation, placement, how it may move]
+- Treat the supplied frame as the visual source of truth for [..].
+
+**Continuity locks**
+[Positions, identities, wardrobe, props, environment, screen direction, lighting, motion limits, and exact start/end pose. State what can change and what must stay fixed.]
+
+**Time and display continuity**
+[Exact visible starting time/countdown. State whether it is frozen or advances in real time. If it advances, calculate and specify the correct ending display for this duration. Resolve source-frame/story contradictions before generation. No invented overlays or extra text.]
+
+**Shot and camera design**
+[Shot size, angle, subject placement, focus/depth, one coherent camera move or static camera, lighting direction/quality, palette, texture, and style.]
+
+**Action and timing**
+- 0.0–[t]: [observable action and camera phase]
+- [t]–[t]: [next beat]
+- Continue with consecutive ranges until the full clip duration is covered, ending on [clear end pose/hold]. Keep action physically plausible and consistent with the exact first frame.
+
+**Audio and dialogue**
+[Time-coded ambience, specific sound effects, music entry/build/resolution, spatial perspective, relative mix levels, and clean start/end. Give exact dialogue, speaker, delivery, timing, pauses, and pronunciation if present; otherwise state “No dialogue.” Keep this plan for external audio-capable applications even if Flow cannot render it. Never claim Flow supports audio unless verified for the active mode/model.]
+
+**Negative prompt**
+[Clip-specific unwanted actions, continuity errors, artifacts, text, and audio.]
+
+**Settings and acceptance checks (outside the paste-ready prompt if chosen in UI)**
+- Mode/model: [verify live]
+- Aspect/duration/resolution/output count: [verify live]
+- Live displayed credit cost: [verify before asking approval]
+- Pass checks: [identity/reference match, action/timing, exact displays, camera, audio, endpoint]
+
+Timing ranges must be consecutive, non-overlapping, and cover the full selected duration. Keep one principal action and one coherent camera trajectory. Do not tell a display both to remain frozen and count down. Keep UI-only generation settings and credit costs separate from the creative prompt body, but show them with the clip-specific approval request.
 
 ### Flow settings to verify before clicking Generate
 
