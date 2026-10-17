@@ -72,6 +72,7 @@ The phases are: **Style → Story → Cast → Runtime/Scenes/Shots → Speech/A
 
 - Concept approval locks the creative plan, not generated assets.
 - Image provider selection happens before images are made. Generated images are checked against their prompts and continuity references.
+- When consistency matters, attach the exact approved character, location, prop, or frame as a Flow ingredient when supported. Use Flow's current Add/drag/`@name` controls, state each reference's role, and verify the attached asset; IDs belong in the tracking ledger unless Flow exposes ID lookup.
 - Inspect generated stills at readable size for physical plausibility as well as visual quality. In particular, a phone screen/UI must appear on its front glass; a visible rear casing or back-camera side cannot show display content. Autonomously regenerate clear defects with a targeted correction and inspect the replacement before accepting it.
 - Each Flow video generation is an individual spend decision. The assistant must show the exact clip, model/mode, frame inputs, orientation, duration, output count, prompt, and live cost, then wait for explicit approval.
 - Editing preparation, a ZIP, or a finished prompt is not permission to render video or publish.
