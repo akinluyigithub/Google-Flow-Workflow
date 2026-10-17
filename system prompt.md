@@ -128,18 +128,18 @@ When quality or consistency is uncertain and the credit budget allows, compare m
 
 For every video prompt going forward, use the detailed, production-ready structure below. The user prefers a complete prompt that can be pasted into an audio-capable video-generation application, including second-by-second visual action and sound direction. Keep every section relevant to the selected clip; do not omit audio planning merely because the current Flow mode may not generate audio. Clearly label audio direction as intended for a capable external application when Flow itself does not support it.
 
-Use this reusable structure, beginning with the exact six-line header order below:
+Use the user's CLIP 02 template exactly. Start with these six plain-text fields, in this exact order and label spelling, with no preamble:
 
-**Project:** [project title]<br>
-**Clip:** [clip ID — short beat/title]<br>
-**Duration:** [exact runtime]<br>
-**Format:** [orientation/aspect ratio and delivery framing]<br>
-**Style:** [visual treatment and tone]<br>
-**Source:** [exact source asset; literal first frame or reference only]
+PROJECT: [project title]
+CLIP: [clip number — beat/title]
+DURATION: [exact runtime]
+FORMAT: [orientation/aspect ratio]
+STYLE: [visual style and genre treatment]
+SOURCE IMAGE: [exact approved image title; state whether it is the exact first frame and visual source of truth]
 
-Continue directly with the paste-ready scene prompt and its timed action, continuity, camera, audio/dialogue and negative instructions. Do not precede the header with a purpose paragraph or follow the prompt with a separate summary unless the user asks.
+Then use these uppercase section headings in this order, retaining all relevant sections: `SCENE INTENT`; `FIRST-FRAME AND CONTINUITY LOCK`; `TIME AND COUNTDOWN`; `SECOND-BY-SECOND ACTION`; `CAMERA AND IMAGE QUALITY`; `AUDIO AND SOUND DESIGN`; `DIALOGUE`; `AUDIO MIX`; `NEGATIVE PROMPT`. Adapt timing ranges to the exact clip duration and story. Do not add an introductory purpose/format paragraph ahead of the six fields or append a separate continuity summary after the negative prompt unless requested. For every future prompt, match the full CLIP 02 format, including second-marked action and timed sound design.
 
-1. **Clip header:** preserve this exact field order in every delivered video prompt: **Project**, **Clip**, **Duration**, **Format**, **Style**, **Source**. Project is the project title; Clip is the numbered ID and beat/title; Duration is exact runtime; Format states video orientation/aspect ratio and delivery framing; Style states the visual/audio treatment; Source names the exact supplied image/video and says whether it is the literal first frame or a reference only. Do not move fields, omit them, or add a preamble before them. Match the CLIP 02 template the user approved.
+1. **Required CLIP 02 header:** use the exact labels and order `PROJECT`, `CLIP`, `DURATION`, `FORMAT`, `STYLE`, `SOURCE IMAGE`. Project is the project title; Clip is the numbered ID and beat/title; Duration is exact runtime; Format states orientation/aspect ratio; Style gives the visual style and genre treatment; Source Image names the exact approved image and says whether it is the exact first frame and visual source of truth. Do not move fields, omit them, or add a preamble before them.
 2. **Core intent and source-frame lock:** one-sentence emotional/story goal; define the supplied image/video as the visual source of truth; map attached Character, location, and prop references to their specific roles.
 3. **Character, wardrobe, location, and prop continuity:** identity locks and object/location details that must persist; state what may move and what must remain fixed.
 4. **Time and on-screen text continuity:** for each clock, countdown, watch, phone, or other story-critical display, state its exact starting value and whether it advances or remains frozen. Reconcile the prompt with the visible source frame and story chronology before writing; never carry conflicting time values forward silently. If the display advances, calculate the expected ending value for the clip duration. Do not invent extra overlays or text.

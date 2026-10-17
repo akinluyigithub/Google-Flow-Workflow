@@ -78,40 +78,46 @@ Review this pack and the storyboard before paying to animate every shot. Text pl
 
 Use this detailed template for every shot prompt. Fill the sections in plain language and remove only sections that truly do not apply. The default is a full, paste-ready prompt for an audio-capable video application, with second-by-second action and timed sound direction.
 
-**Project:** [project title]<br>
-**Clip:** [clip ID — short beat/title]<br>
-**Duration:** [exact runtime]<br>
-**Format:** [orientation/aspect ratio and delivery framing]<br>
-**Style:** [visual treatment and tone]<br>
-**Source:** [exact source asset; literal first frame or reference only]
+PROJECT: [project title]
+CLIP: [clip number — beat/title]
+DURATION: [exact runtime]
+FORMAT: [orientation/aspect ratio]
+STYLE: [visual style and genre treatment]
+SOURCE IMAGE: [exact approved image title; exact first frame and visual source of truth / reference only]
 
-Always begin with these six fields in this exact order. Do not insert a title, purpose paragraph, settings summary, or other text above them. Continue immediately with the scene prompt and detailed timed action.
+Always begin with these six fields in this exact order and spelling. Do not insert a title, purpose paragraph, settings summary, or other text above them. Follow the CLIP 02 section headings and order below.
 
-**Core intent and reference map**
+**SCENE INTENT**
 - Emotional/story beat: [..]
 - [Character reference]: [identity, face, hair, build, wardrobe, voice, and role]
 - [Location reference]: [geography, background, palette, lighting, details to preserve]
 - [Prop reference]: [design, orientation, placement, how it may move]
-- Treat the supplied frame as the visual source of truth for [..].
+- Treat the supplied frame as the visual source of truth for [..]. Name each attached Character, location, and prop reference and the detail it controls; claim attachment only after verifying it.
 
-**Continuity locks**
+**FIRST-FRAME AND CONTINUITY LOCK**
 [Positions, identities, wardrobe, props, environment, screen direction, lighting, motion limits, and exact start/end pose. State what can change and what must stay fixed.]
 
-**Time and display continuity**
+**TIME AND COUNTDOWN**
 [Exact visible starting time/countdown. State whether it is frozen or advances in real time. If it advances, calculate and specify the correct ending display for this duration. Resolve source-frame/story contradictions before generation. No invented overlays or extra text.]
 
-**Shot and camera design**
+**CAMERA AND IMAGE QUALITY**
 [Shot size, angle, subject placement, focus/depth, one coherent camera move or static camera, lighting direction/quality, palette, texture, and style.]
 
-**Action and timing**
+**SECOND-BY-SECOND ACTION**
 - 0.0–[t]: [observable action and camera phase]
 - [t]–[t]: [next beat]
 - Continue with consecutive ranges until the full clip duration is covered, ending on [clear end pose/hold]. Keep action physically plausible and consistent with the exact first frame.
 
-**Audio and dialogue**
-[Time-coded ambience, specific sound effects, music entry/build/resolution, spatial perspective, relative mix levels, and clean start/end. Give exact dialogue, speaker, delivery, timing, pauses, and pronunciation if present; otherwise state “No dialogue.” Keep this plan for external audio-capable applications even if Flow cannot render it. Never claim Flow supports audio unless verified for the active mode/model.]
+**AUDIO AND SOUND DESIGN**
+[Time-coded ambience, specific sound effects, music entry/build/resolution, spatial perspective, and synchronized audio events. Keep this plan for external audio-capable applications even if Flow cannot render it. Never claim Flow supports audio unless verified for the active mode/model.]
 
-**Negative prompt**
+**DIALOGUE**
+[Exact dialogue, speaker, delivery, timing, pauses, and pronunciation if present; otherwise state “No spoken lines, narration, lyrics, or intelligible background dialogue.”]
+
+**AUDIO MIX**
+[Clarity, relative levels, room perspective, stereo width, reverb limits, clean start/end, and limits on clipping/distortion/abrupt cutoff.]
+
+**NEGATIVE PROMPT**
 [Clip-specific unwanted actions, continuity errors, artifacts, text, and audio.]
 
 **Settings and acceptance checks (outside the paste-ready prompt if chosen in UI)**
