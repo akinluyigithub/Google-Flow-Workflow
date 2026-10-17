@@ -133,7 +133,32 @@ Derive six portrait assets from the approved sheets: `REF 01C` through `REF 06C`
 
 ### Stage 5 — 9:16 episode storyboard boundary images
 
-Three clips per episode, six episodes = 18 clips, each planned at 10 seconds; four boundary images per episode = 24 images (`SHOT 01`–`SHOT 24`, four per episode). Each episode’s three clips target its four successive storyboard boundaries; use a new reset composition at each failed-loop episode opening. Label each image with episode and beat while preserving chronological shot numbering.
+Three clips per episode, six episodes = 18 clips, each planned at 10 seconds; four boundary images per episode = 24 images (`SHOT 01`–`SHOT 24`, four per episode). Each episode is its own continuity segment with three clips and four boundaries. Within an episode, the same approved still is the prior clip's end target and the next clip's planned start. Use a new reset composition at each failed-loop episode opening; do not bridge the preceding episode's ending into the reset. Give shared stills a compact dual-role title such as `EP1 S02 — C01 END / C02 START`, while keeping the stable SHOT ID, full beat, detailed filename, and chronological order in the ledger.
+
+**Planned boundary map:**
+
+| Episode segment | Clip | Planned start → end storyboard stills |
+|---|---:|---|
+| EP1 | CLIP 01 | SHOT 01 → SHOT 02 |
+| EP1 | CLIP 02 | SHOT 02 → SHOT 03 |
+| EP1 | CLIP 03 | SHOT 03 → SHOT 04 |
+| EP2 | CLIP 04 | SHOT 05 → SHOT 06 |
+| EP2 | CLIP 05 | SHOT 06 → SHOT 07 |
+| EP2 | CLIP 06 | SHOT 07 → SHOT 08 |
+| EP3 | CLIP 07 | SHOT 09 → SHOT 10 |
+| EP3 | CLIP 08 | SHOT 10 → SHOT 11 |
+| EP3 | CLIP 09 | SHOT 11 → SHOT 12 |
+| EP4 | CLIP 10 | SHOT 13 → SHOT 14 |
+| EP4 | CLIP 11 | SHOT 14 → SHOT 15 |
+| EP4 | CLIP 12 | SHOT 15 → SHOT 16 |
+| EP5 | CLIP 13 | SHOT 17 → SHOT 18 |
+| EP5 | CLIP 14 | SHOT 18 → SHOT 19 |
+| EP5 | CLIP 15 | SHOT 19 → SHOT 20 |
+| EP6 | CLIP 16 | SHOT 21 → SHOT 22 |
+| EP6 | CLIP 17 | SHOT 22 → SHOT 23 |
+| EP6 | CLIP 18 | SHOT 23 → SHOT 24 |
+
+This yields 18 clips + 6 independent episode segments = 24 planned boundary images. Shared interior examples include `SHOT 06 — CLIP 04 END / CLIP 05 START`, `SHOT 10 — CLIP 07 END / CLIP 08 START`, and `SHOT 22 — CLIP 16 END / CLIP 17 START`. Current SHOT images are storyboard targets, not generated video endpoints. After a clip is generated, reviewed, and approved, extract its exact final displayed frame; use that actual extracted image as the next clip's start input when supported, with the following SHOT as its end target. Keep the planned SHOT as the reference/target and record both roles separately.
 
 **Mandatory reference gate for every storyboard image:** use Flow's Add ingredients picker to attach the approved Flow Character record or approved portrait for every recurring character in the frame. Also attach the approved location plate for recurring locations and the relevant prop sheet when a signature prop is visible. The prompt must identify what each attached reference controls (identity/face/wardrobe, room geography/lighting, or prop shape/handedness). Verify the thumbnails/captions are visibly attached before generating; character names and text-only descriptions do not count as attached references. If Flow's ingredient limit prevents attaching everything, prioritize visible recurring characters and the location, then use a relevant approved prior frame as reference if supported and record what was omitted. Do not generate before this check passes.
 
