@@ -6,7 +6,7 @@ This is the operating playbook for creating short-form stories and videos with G
 
 ## One-word trigger
 
-The user can start this complete workflow by saying **FlowStart** (case-insensitive). Treat the standalone trigger as the request to begin **Phase 1 — Choose visual style** in the current conversation/project. Begin immediately with one recommendation and the numbered style choices; do not ask what FlowStart means or restart a previously active FlowStart project. If a Project State already exists, resume at its recorded next action. FlowStart authorizes planning and the initial style step only. It does not bypass concept approval, image-provider choice, per-image review, the individual video prompt/model/settings/cost approval, editing choices, or publishing authorization. Continue one decision at a time and stop at every gate.
+The user can start this complete workflow by saying **FlowStart** (case-insensitive). Treat the standalone trigger as the request to begin **Phase 1 — Choose visual style** in the current conversation/project. Begin immediately with one recommendation and the numbered style choices; do not ask what FlowStart means or restart a previously active FlowStart project. If a Project State already exists, resume at its recorded next action. FlowStart authorizes planning and the initial style step only. It does not bypass concept approval, image-provider choice, final batch selection, the individual video prompt/model/settings/cost approval, editing choices, or publishing authorization. Once the user selects an image provider and approves the image batch scope, generate and QC the batch without asking about each image individually. Continue one decision at a time and stop at every required gate.
 
 ## Non-negotiable operating rules
 
@@ -52,11 +52,27 @@ Story category candidates (not a certified ranking): micro-drama/cliffhanger; em
 
 Score concepts as editorial judgment (not observed audience performance): visual appeal, curiosity, emotion, originality, clarity, feasibility, and platform fit. Include a retention arc: immediate hook, setup, escalation, payoff, and ending/loop. Use meaningful developments if repetition risks attention; do not force a mechanical interval. For current trend rankings, browse dated primary/platform sources and distinguish evidence from creative prediction.
 
-## Phase 3 — Cast and continuity
+## Phase 3 — Cast, voice design, and continuity
 
-Recommend 1–3 main characters and ask acceptance or a different count. Determine audience age context and whether cast includes people, animals/fantasy beings, talking objects, custom cast, or none. Create identity prompts and voice locks as applicable. A multi-character story must give characters meaningful interaction.
+Recommend 1–3 main characters and ask acceptance or a different count. Determine audience age context and whether cast includes people, animals/fantasy beings, talking objects, custom cast, or none. Every character who speaks must receive a voice lock and a reusable Flow Character voice during character setup; voice creation is part of completing the character, not a later optional enhancement. Mark non-speaking characters as voice not applicable. A multi-character story must give characters meaningful interaction.
 
-Track names, age range where relevant, face/hair, body/build, wardrobe/accessories, handedness, relative scale, voice/language/accent/pronunciation, prop ownership/position, location geography, lighting direction, time/weather, and intentional state changes. Do not infer nationality from language or appearance. If a specific real person must be depicted, use an appropriate authorized reference; text alone cannot reproduce identity reliably.
+For each character, make one complete creative recommendation at once instead of asking a string of appearance and voice questions. Include name, role, age range where relevant, face/hair, build, wardrobe/accessories, behavior/personality, handedness if it affects action, and (if speaking) a complete voice proposal: voice name, suitable Flow preset, language/accent/pronunciation, register/pitch, texture, pace/articulation, baseline delivery, emotional range, signature behavior, and avoidances. Add one short representative sample line in character. The user can approve the complete proposal or request a focused revision. Do not require separate approval for routine subchoices such as voice name or sample wording.
+
+Track names, age range where relevant, face/hair, body/build, wardrobe/accessories, handedness, relative scale, voice/language/accent/pronunciation, delivery and emotional range, prop ownership/position, location geography, lighting direction, time/weather, and intentional state changes. Do not infer nationality from language or appearance. Do not infer accent, personality, or pitch from visual appearance or stereotypes. If a specific real person must be depicted, use an appropriate authorized reference; text alone cannot reproduce identity reliably.
+
+### Required Flow Character and voice setup
+
+After the complete cast proposal is approved, create each needed character in the project's **Characters** area. Use an approved project image or create a clean portrait/reference; add the character's appearance, name, and behavior/personality description. For every speaking character, complete this voice sequence before marking character setup done:
+
+1. Open the character's voice control and select the closest preset based on the planned performance, not just a generic gender/pitch label.
+2. Customize the voice and name it clearly (for example, `Maya — Calm Suspense`). Keep the name specific enough to distinguish it from presets and other character voices.
+3. Enter the approved representative sample dialogue, attributed to the character. Keep it short, natural, and useful for judging the intended baseline/emotional color.
+4. Describe how the voice should sound and perform: language/accent/pronunciation, register, timbre/texture, pace, articulation, breath, baseline delivery, emotional range, scene-appropriate shifts, and what to avoid. Distinguish stable voice identity from the character's temporary emotion in a particular shot.
+5. Play/preview the sample. Confirm that preview generation finishes; evaluate intelligibility, natural pacing, pronunciation/accent, fit to character, and distinction from other voices when audio is actually accessible. Do not claim to have heard or evaluated audio if the current interface/control does not make it audible.
+6. If the preview misses, revise the preset, sample, or performance description and preview again. Save the new voice, then explicitly **Add to character**. A saved voice is not complete until attached to the intended character.
+7. Verify the character sheet displays the correct saved voice and that the appearance/personality, sample, and performance notes agree with the character bible; then save/finish the character.
+
+Maintain a voice-bible record per speaker: `Character | Flow voice name and preset | language/accent | register and texture | pace/articulation | baseline delivery | emotional range | sample dialogue | pronunciation notes | preview status | attached/verified`. For video prompts, identify the speaker and exact words, preserve the character's stable saved voice, and specify only the scene-specific performance (e.g., a restrained whisper or a frightened pause). Confirm current model/mode support for character voice references before relying on them; availability may vary by model, region, account, and rollout.
 
 ## Phase 4 — Runtime, scenes, clips, and timing
 
@@ -81,7 +97,7 @@ Present the locked style and camera/lighting/edit treatment; category; title; ho
 After concept approval, prepare all prompts and planning without generating any media:
 
 - Story narrative and screenplay with exact approved dialogue.
-- Character/voice/wardrobe locks; location, prop, and world/series bible.
+- Character appearance, behavior, wardrobe, and voice locks for every speaker; location, prop, and world/series bible. Include the Flow Character name, saved/attached voice name and preset, vocal performance description, sample dialogue, pronunciation notes, and preview verification status.
 - Asset manifest with IDs, proposed filenames, dependencies, status, and intended provider.
 - Exact clip timeline with actions, entry/exit pose, camera path, transition, dialogue windows, start/end frame IDs and duration.
 - N+1 boundary-frame storyboard for N continuous clips, including the final endpoint.
@@ -93,15 +109,15 @@ Do not generate images or videos in this phase. End by asking whether to start i
 
 ## Phase 9 — Image provider choice, generation, and asset approval
 
-### 9A. Choose the image tool
+### 9A. Choose the image tool and authorize the batch
 
-Ask explicitly: **“Which should we use for the images: ChatGPT Images or Google Flow Images?”** Give a concise recommendation with reason, trade-off, and alternative. If the prompt set is large, offer Google Flow batch size options only when the live UI offers them, showing the total number of generations and displayed cost before the user chooses. User can also select one image at a time. Never auto-submit a batch for convenience.
+Ask once: **“Which should we use for the images: ChatGPT Images or Google Flow Images?”** Give a concise recommendation with reason, trade-off, and alternative. The user chooses the provider; do not ask them to approve every prompt or each image. Prepare all planned image prompts and submit them together as a batch where the selected tool supports it. For Flow, inspect the live output count, aspect ratio, model (prefer Nano Banana 2.1 when available), and any displayed cost; use one output per distinct prompt by default, while multiple prompts may be sent in the same batch. The user has authorized image generation after choosing the provider and approving the planned image batch scope. Do not add a separate per-image approval gate. Keep video generation behind its separate explicit approval gate.
 
 ### 9B. Generate and review
 
 Inventory supplied references and missing assets. Generate character references first, then needed location/prop references, then storyboard images in order. Keep reference sheets separate from story frames. Default 9:16, one output per prompt. For every asset, identify its ID, proposed filename, shot/role, visible characters, reference inputs, aspect ratio, provider/model, and exact approved prompt. After generation, inspect face/anatomy, composition, identity, wardrobe, prop positions, geography, lighting, style, and compatibility with neighboring frames.
 
-Ask **APPROVE / REGENERATE / REQUEST CHANGES** for each image and stop. Only explicit approval locks it for downstream use. Regeneration or a changed reference invalidates only dependent images/clips; identify those dependencies. Preserve actual source file type and resolution; never claim the proposed filename exists until verified.
+For ChatGPT Images, or for Flow image work once the user has selected the provider and approved the planned batch scope, generate the requested image prompts without asking the user to approve every individual still. Inspect every result for prompt match, reference/character/location/prop continuity, plausible anatomy and object geometry, composition, aspect ratio, and neighboring-frame compatibility. Automatically retry a clearly defective still with a targeted prompt that changes only the failed dimension; keep useful versions and report what was regenerated. After the full batch and QC, present the results together for one selection/approval of which images to lock for downstream use. A user can ask to stop or revise at any point. Preserve actual source file type and resolution; never claim the proposed filename exists until verified.
 
 ### 9C. Import external ChatGPT Images into Flow when needed
 

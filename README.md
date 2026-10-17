@@ -6,7 +6,7 @@ An approval-driven production playbook for planning original short-form stories,
 
 ![Google Flow viral video workflow diagram](assets/google-flow-viral-workflow.svg)
 
-**Core rule:** still-image production always begins with a provider choice—ChatGPT Images or Google Flow Images. Videos render in Google Flow, and each video clip requires explicit approval of its prompt, settings, and displayed credit cost before generation.
+**Core rule:** still-image production begins with one provider choice—ChatGPT Images or Google Flow Images. After the user authorizes the planned image batch, generate all planned images, inspect them, and retry clear defects without per-image approvals; ask once for selection after the batch. Videos render in Google Flow, and each video clip requires explicit approval of its prompt, settings, and displayed credit cost before generation.
 
 **Start the workflow by saying `FlowStart`.** It begins at visual-style selection, then advances through the phases while preserving all concept, image, cost, clip, editing, and publishing approval gates.
 
@@ -14,7 +14,7 @@ An approval-driven production playbook for planning original short-form stories,
 
 ## Documents
 
-- [Universal Viral Video Workflow](UNIVERSAL%20VIRAL%20VIDEO%20WORKFLOW.md) — the complete 12-phase workflow, including image-provider choices, per-clip Flow video approval, Scenebuilder cuts, Flow Agent edits, Extend limitations, continuity checks, and posting package.
+- [Universal Viral Video Workflow](UNIVERSAL%20VIRAL%20VIDEO%20WORKFLOW.md) — the complete 12-phase workflow, including reusable character voice creation, image-batch production and QC, per-clip Flow video approval, Scenebuilder cuts, Flow Agent edits, Extend limitations, continuity checks, and posting package.
 - [System Prompt](system%20prompt.md) — standing assistant behavior and current beginner Google Flow procedures.
 - [Video Editing Prompt](video%20editing%20prompt.md) — copy-ready template for planning and editing a project.
 - [Style Library](STYLE%20LIBRARY.md) — the 243 style options from the supplied master prompt, with catalog codes.
@@ -34,6 +34,10 @@ These defaults reflect the user's requested workflow, not a promise that every f
 
 1. Add accepted clips to a Scene/Scenebuilder, arrange them in story order, and use each clip's handles to trim its beginning and end.
 2. Preview the complete sequence and inspect cuts for clipped dialogue, unfinished movement, repeated frames, awkward pacing, or abrupt audio changes.
+
+## Character voice workflow
+
+Every speaking character receives a planned and saved Flow voice as part of character creation. The workflow defines a stable voice lock (language/accent, register, texture, pace, articulation, baseline delivery, and emotional range), then in Flow selects and customizes a preset, names the voice, enters representative sample dialogue, previews the performance, saves the custom voice, attaches it to the correct Character, and verifies the Character sheet. If the preview is unsuitable, revise and preview again. Keep stable voice identity separate from scene-specific delivery, and never claim an audio preview was heard when it was not accessible. See [system prompt.md](system%20prompt.md) and [UNIVERSAL VIRAL VIDEO WORKFLOW.md](UNIVERSAL%20VIRAL%20VIDEO%20WORKFLOW.md).
 3. Use Agent/video editing for a focused change to a selected clip. Say what must stay fixed and change one main thing at a time. Compare versions in History/asset stack; keep the original.
 4. Extend a clip only when the selected model supports it. Confirm the exact model, limitation, duration, and cost before approval.
 5. Download the scene and verify the file. Use a dedicated editor for detailed audio mixing, captions, titles, grading, or frame-accurate finishing beyond Flow's current controls.

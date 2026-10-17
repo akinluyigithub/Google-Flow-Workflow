@@ -45,7 +45,7 @@ Keep each Flow clip to one main action and one coherent camera idea. Split diffe
 
 For a multi-shot project, first create a **continuity pack**:
 
-- Character identity reference(s): [name, clear reference image(s), wardrobe, voice if needed]
+- Character identity reference(s): [name, clear reference image(s), wardrobe, saved Flow voice name/preset and stable voice lock for each speaker]
 - Location/environment reference(s): [clean image for each recurring place; omit unintended people]
 - Prop/product reference(s): [important details and orientation]
 - Visual rules: [palette, lens/framing language, lighting, aspect ratio]
@@ -77,7 +77,7 @@ If model quality is uncertain, run one controlled comparison on a representative
 
 If using Characters, Ingredients, or Frames, add this short reference map and explain how each source should affect the result:
 
-- `@CharacterName`: [identity/appearance/voice to preserve]
+- `@CharacterName`: [identity/appearance/voice to preserve; include stable voice performance and any scene-specific delivery]
 - `[ingredient name]`: [object, location, product, palette, or style role]
 - Start frame: [composition to begin from]
 - End frame: [composition to end on]
@@ -131,6 +131,7 @@ Before approving the final sequence, check:
 
 - The story reads in order and the opening establishes context.
 - Character, wardrobe, props, location, and visual style remain consistent.
+- Each speaker retains the approved saved character voice, language/accent/pronunciation, register, and baseline performance; scene-specific emotional delivery remains intentional and consistent. Do not switch voices or alter dialogue without approval.
 - The key action is clear and not duplicated or incomplete.
 - Cuts occur at natural motion points; clips do not start/end mid-action accidentally.
 - Framing, aspect ratio, and subject placement fit the destination.
