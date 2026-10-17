@@ -28,7 +28,7 @@ An approval-driven production playbook for planning original short-form stories,
 ## FlowStart research and decision limits
 
 - Recommendations begin with current, dated research across TikTok, YouTube Shorts, and Instagram Reels. Evidence and creative inference are labeled separately; sources are linked in the response and kept in the project note.
-- For viral micro-drama, first ask the user's preferred tradition/region; after they choose, research that direction and relevant current platform signals before presenting any story recommendations. Regional setting and dialogue language are separate choices.
+- For viral micro-drama, first ask the user's preferred tradition/region; after they choose, research that direction and relevant current platform signals before presenting any story recommendations. English is the default dialogue, narration, caption, and voice language across all regional settings; region affects story context and setting, not language or inferred accent.
 - Trend research targets the user's stated niche, language, geography, and audience where known. It never guarantees reach or claims a universal trend from one forecast.
 - Before the image batch, the assistant aims for five required decision questions and never exceeds seven unless the user requests more exploration. Style, format, story, cast/voice, setting, script, runtime, shot plan, framing, and sound are bundled where possible.
 - The assistant keeps the process moving after each answer. Image-provider choice authorizes the planned still-image batch and its autonomous QC/retries. Each paid Google Flow video generation still requires its own explicit, clip-specific approval.
