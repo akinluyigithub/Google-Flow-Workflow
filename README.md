@@ -47,7 +47,9 @@ These current references inform the research method; each new FlowStart must che
 
 ## Default image and video controls
 
-**Resolution preference:** automatically use the highest available resolution that adds no monetary or credit cost and requires no plan upgrade. Free 2K image upscaling is the standard when Flow offers it. Verify actual downloaded dimensions, preserve useful originals, and record that the files are upscaled. Recheck availability/cost in the live UI; paid upgrades retain their approval requirements.
+**Image storage:** Flow-generated stills stay in Flow for naming, review, approval, and video conditioning. Do not download them just to stage them locally or obtain a download-only upscale. Save ChatGPT-generated image files in the local project folder when accessible, then upload them to Flow. Download Flow stills only for a requested export/backup or a concrete external task. Phase 11 video downloads remain necessary for external editing.
+
+**Resolution preference for necessary exports:** automatically use the highest available resolution that adds no monetary or credit cost and requires no plan upgrade. Free 2K image upscaling is the standard when Flow offers it. Verify actual downloaded dimensions, preserve useful originals, and record that the files are upscaled. Recheck availability/cost in the live UI; paid upgrades retain their approval requirements.
 
 | Work | Default | Approval rule |
 |---|---|---|

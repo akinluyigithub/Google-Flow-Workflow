@@ -191,7 +191,13 @@ Name every completed result in Flow immediately, before presenting the batch: `R
 
 Use the generated tool's saved local path. In the ChatGPT/Codex built-in in-app browser, open the current project's Flow workspace and add the asset through **Add media (+) → Upload** or the prompt's add-ingredient control. Wait for processing and verify it appears in the project's Uploads/Images area. Explicitly tell Flow whether it represents identity, location, product, style, or composition. Do not trigger an additional Flow generation just to upload. A literal drag from the chat image panel may be unsupported; use the upload picker and accurately describe the method used.
 
-### 9C.1. Download at the highest available free resolution
+### 9C.1. Keep media with its generation provider
+
+For Flow-generated stills, perform naming, visual review, selection, and subsequent video conditioning directly in the same Flow project. Reuse the actual assets through supported ingredients/frames controls. Do not download stills to the workspace or use upscale-download as a routine pre-video step. The asset ledger can use Flow titles/URLs/IDs and approval state with local path marked `Not needed — Flow asset`. Download a still only for an explicit user request or a concrete external delivery, backup, packaging, or editing need. For ChatGPT Images, save/copy the tool-returned files into the existing local project folder when accessible, preserve actual source types, then upload and verify them in Flow. Approved video clips still download for Phase 11 external editing.
+
+### 9C.2. Highest free resolution when an export is needed
+
+The following resolution preference applies only when a download/export is actually needed. It does not create a reason to download Flow-generated stills. An upscale that is available only through download does not prove the saved Flow ingredient changed resolution.
 
 Use the highest supported resolution that adds no money or credit cost and needs no subscription upgrade. Free 2K image upscaling is the standard when available; do not choose only 1K original downloads out of habit. Verify live options and cost evidence first. The user's standing preference authorizes free upscaling without another approval. Preserve useful originals, download the upscale, decode it, check actual dimensions and visual fidelity, and record the native/upscaled distinction and real path in the asset ledger. If a higher resolution costs credits or its cost is unclear, use the best confirmed free version and disclose the limit. Carry this rule into Phase 11 exports when free video upscaling is supported; paid video changes retain their separate approval gate. See [Asset Naming and Review Guide](ASSET%20NAMING%20AND%20REVIEW%20GUIDE.md).
 

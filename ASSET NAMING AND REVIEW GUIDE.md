@@ -24,6 +24,8 @@ Use two-digit numbers in story order, assigned in the approved asset plan. Keep 
 
 ## Resolution and free upscaling
 
+**Storage comes first:** keep Flow-generated images in Flow and reuse them there for video. Review and label them in Flow; the ledger needs their Flow identity/status, with a local path marked not needed. Do not download them merely for workspace staging or a contact sheet. Download only for the user's requested export/backup or a concrete external task. Save ChatGPT-generated image files into the local project folder when accessible, then upload them to Flow. The resolution rule below applies to necessary exports; a download-only upscale is not a prerequisite to using a saved Flow image.
+
 Choose the highest supported resolution with no added money or credit cost and no plan upgrade. In Flow, free 2K image upscaling is the standard when offered; prefer it over a 1K-only delivery. Check live availability and cost evidence rather than treating every upscale as free. No extra user question is needed for a verified free upscale. Preserve useful originals and identify the upscaled file, for example `EP01_SHOT_05_warning-at-front-door_v02_2K.jpg`. Verify decoding, real pixel dimensions, aspect ratio, identity, wardrobe/color, and physical geometry after upscaling; do not infer resolution from the filename or claim native 2K detail. Record actual width/height, source/upscaled status, file path, and any observed cost in the ledger. Use the best confirmed free option if a higher tier is paid, unavailable, or its cost is unclear; do not purchase a plan upgrade. Apply the same preference to free video export upscaling while retaining paid clip approval requirements.
 
 ## Final review check
