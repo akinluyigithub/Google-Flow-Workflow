@@ -87,6 +87,8 @@ SOURCE IMAGE: [exact approved image title; exact first frame and visual source o
 
 Always begin with these six fields in this exact order and spelling. Do not insert a title, purpose paragraph, settings summary, or other text above them. Follow the CLIP 02 section headings and order below.
 
+When delivering a finished prompt to the user, place the entire prompt in one plain-text fenced code block so the app displays its Copy button. Keep settings/quotes/approval requests outside the block; do not split the prompt or add commentary inside it.
+
 **SCENE INTENT**
 - Emotional/story beat: [..]
 - [Character reference]: [identity, face, hair, build, wardrobe, voice, and role]
