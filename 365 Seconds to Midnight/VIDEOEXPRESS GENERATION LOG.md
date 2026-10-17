@@ -1,6 +1,6 @@
 # VideoExpress generation log — 365 Seconds to Midnight
 
-Updated 2026-10-17 (America/Chicago). Generation is paused at the user's request after CLIP 10 submission. No CLIP 11–24 jobs have been submitted.
+Updated 2026-10-17 (America/Chicago). Generation is paused at the user's request after CLIP 15 submission. No CLIP 16–24 jobs have been submitted.
 
 | Clip | VideoExpress name / status | Receipt ID |
 | --- | --- | --- |
@@ -15,5 +15,12 @@ Updated 2026-10-17 (America/Chicago). Generation is paused at the user's request
 | 08 | CLIP 08 — Recognition | 177a29c0-dae8-451f-9e47-b44e77034324 |
 | 09 | CLIP 09 — The Glass Switch | 442f3811-327b-4a6f-8df2-06026f04e242 |
 | 10 | CLIP 10 — The Chandelier | 3909c57f-3cc0-4cf3-8333-794d813459d8 |
+| 11 | CLIP 11 — Locked In | 2aa0440e-b6b2-4428-b29e-e862762fc135 |
+| 12 | CLIP 12 — You Too? | f9928f28-1cf7-434e-81fb-4e114102597d |
+| 13 | CLIP 13 — You Hired Them All | da4bd93f-4e26-4655-a12b-36e2d53e938a |
+| 14 | CLIP 14 — Service Corridor | 2a0a9689-0acf-4c2a-a94d-6a882a4b1982 |
+| 15 | CLIP 15 — Hidden Camera | 5b65ec21-9b02-4eba-8df4-8844df9beb7f |
 
-CLIP 06 was submitted twice while the first submission response was delayed. Both renders were retained and named distinctly. CLIP 06–10 were submitted from their matching SHOT stills under Create with AI → Create Video From Prompt → Use from Library. The matching full prompt from `02 - Story and Prompts/Video Prompts 06-24.md` was pasted into Video and Audio Prompt, with Advanced Mode, Automatic Enhance My Video Prompt, and Manual Video Length 8 seconds enabled. Public gallery sharing remained off. The gallery's duration labels are unreliable; actual video QA and local download have not yet been done.
+CLIP 06 was submitted twice while the first submission response was delayed. Both renders were retained and named distinctly. CLIP 06–15 were submitted from their matching SHOT stills under Create with AI → Create Video From Prompt → Use from Library. The matching full prompt from `02 - Story and Prompts/Video Prompts 06-24.md` was pasted into Video and Audio Prompt, with Advanced Mode, Automatic Enhance My Video Prompt, and Manual Video Length 8 seconds enabled. Public gallery sharing remained off. The gallery's duration labels are unreliable; a detailed continuity and audio audit and local downloads remain outstanding.
+
+CLIP 11–15 gallery cards were matched to receipt IDs and renamed after rendering. Each was played in the VideoExpress player through its final beat. The player reported approximately 8.04 seconds and 1080×1920 for each; this is a basic playback and frame check, not an independent speech, audio-mix, or frame-by-frame continuity audit. No CLIP 11–15 files have been downloaded locally yet.
