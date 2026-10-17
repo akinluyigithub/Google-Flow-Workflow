@@ -4,11 +4,9 @@
 **Prompt format:** CLIP 02 format, one self-contained prompt per clip.  
 **Target:** 8 seconds, vertical 9:16, English dialogue, cinematic photorealism.
 
-> **Continuity status:** This is a one-prompt-per-SHOT draft based on each still as an individual source frame. It predates the paired-boundary workflow and is not ready to use as a Phase 10 clip prompt pack. Before video generation, map each actual clip to its start and end SHOT using [FRAME CONTINUITY PLAN.md](FRAME%20CONTINUITY%20PLAN.md), then rewrite the prompt to condition on both supported frame inputs and animate the connecting action. For Clip 2 onward, use the prior approved clip's exact extracted final frame as the actual start input when supported; keep the mapped storyboard image as the end target. Do not treat a SHOT still as a generated video endpoint.
-
 ## Using this prompt pack
 
-Use each prompt as a beat/action draft only. For a video clip, attach both the actual start input and planned end target through the selected model's supported frame controls, following the project boundary map. Attach approved character, location, or prop references for visible recurring elements when the application supports them. Preserve faces, wardrobe, props, composition, and room geography. The storyboard's time-loop resets are continuity breaks between episodes; do not join those as uninterrupted motion. Where a clock is unreadable, do not invent digits. Exact digital clock text can be corrected in editing if the generator distorts it.
+Use the matching downloaded SHOT image as the video model's source/first frame. If the application has character, location, or prop reference inputs, attach the approved references for every visible recurring character, the matching location, and any signature prop in that frame. Do not rely on written character descriptions alone when reference inputs are available. Preserve the source image's faces, wardrobe, props, composition, and room geography. The prompts call out intentional time jumps and resets: these numbered clips are separate storyboard beats, not a single uninterrupted 8-second-per-still timeline. Where a clock is unreadable, do not invent digits. Exact digital clock text can be corrected in editing if the generator distorts it.
 
 Each prompt is in its own code block for easy copying. Replace the source-image filename only if your chosen video tool uses a different import label.
 
